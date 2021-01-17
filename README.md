@@ -1,3 +1,3 @@
 # CS520-2021-Spring
 
-For teaching BU CAS CS520, Spring, 2021.
+For teaching BU CAS CS 520, Spring, 2021.
