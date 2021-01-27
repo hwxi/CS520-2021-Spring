@@ -4164,8 +4164,8 @@ make[1]: Leaving directory '/tmp/ATS2-Postiats-int-0.4.2/ccomp/atslib'
 real	0m38.758s
 user	1m10.120s
 sys	0m6.104s
-hwxi@hongwei-t440p:/tmp/ATS2-Postiats-int-0.4.2$ ./bin/patscc -vats
-ATS/Postiats version 0.4.3 with Copyright (c) 2011-2021 Hongwei Xi
+hwxi@hongwei-t440p:/tmp/ATS2-Postiats-int-0.4.2$ ./bin/patsopt -v
+ATS/Postiats version 0.4.1 with Copyright (c) 2011-2020 Hongwei Xi
 hwxi@hongwei-t440p:/tmp/ATS2-Postiats-int-0.4.2$ exit
 exit
 
