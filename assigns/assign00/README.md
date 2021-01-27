@@ -1,5 +1,7 @@
 # Assignment 00
 
+It is due by 2pm on Thursday, the 28th of January.
+
 ## Task 1 (10 points)
 
 Please create a private repository that mirrors this one and update
