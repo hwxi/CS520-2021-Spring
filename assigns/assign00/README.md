@@ -13,6 +13,9 @@ where USERID refers to your BU user id. For instance, mine is hwxi
 (and my bu email address is hwxi@bu.edu). Please note that USERID is
 NOT your BU identification number (which is U followed by 8 digits).
 
+After your repository is created, please share it with me. Note that
+my github id is 'hwxi'.
+
 ## Task 2 (10 bonus points)
 
 Installing ATS on your own laptop computer. You can find information
