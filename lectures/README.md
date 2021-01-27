@@ -1,6 +1,6 @@
-# Lectures for CS520
+# Lectures
 
-Semester: Spring, 2021
+For CS520, Spring, 2021
 
 ## Lecture-01-26(Tue)
 
