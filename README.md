@@ -30,7 +30,7 @@ cd CS520-2021-Spring
 git push --mirror https://github.com/hwxi/CS520-2021-Spring-hwxi
 git clone https://github.com/hwxi/CS520-2021-Spring-hwxi
 cd CS520-2021-Spring-hwxi
-git remote add upstream https://hwxi@github.com/hwxi/CS520-2021-Spring.git
+git remote add upstream https://github.com/hwxi/CS520-2021-Spring.git
 ```
 
 Step 3:
