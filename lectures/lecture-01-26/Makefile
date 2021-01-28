@@ -5,11 +5,11 @@
 ######
 
 MYCC=gcc
-MYCC=clang
+# MYCC=clang
 
 ######
 
-PATSCC=patscc
+PATSCC=patscc # for ATS2
 
 ######
 
@@ -21,7 +21,8 @@ all:: fibo2_dats
 
 ######
 
-fibo: fibo.c ; $(MYCC) -o $@ $<
+fibo: fibo.c; \
+$(MYCC) -o fibo fibo.c
 fibo2: fibo2.c ; $(MYCC) -o $@ $<
 
 ######
