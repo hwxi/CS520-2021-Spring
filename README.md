@@ -28,7 +28,17 @@ Then please mirror-push the class repo into your own repo:
 ```
 cd CS520-2021-Spring
 git push --mirror https://github.com/hwxi/CS520-2021-Spring-hwxi
+```
+
+Then please git-clone your own repo:
+
+```
 git clone https://github.com/hwxi/CS520-2021-Spring-hwxi
+```
+
+Then please make the class repo an upstream of your own repo:
+
+```
 cd CS520-2021-Spring-hwxi
 git remote add upstream https://github.com/hwxi/CS520-2021-Spring.git
 ```
