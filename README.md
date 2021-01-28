@@ -29,6 +29,7 @@ Then please mirror-push the class repo into your own repo:
 cd CS520-2021-Spring
 git push --mirror https://github.com/hwxi/CS520-2021-Spring-hwxi
 git clone https://github.com/hwxi/CS520-2021-Spring-hwxi
+cd CS520-2021-Spring-hwxi
 git remote add upstream https://hwxi@github.com/hwxi/CS520-2021-Spring.git
 ```
 
@@ -38,5 +39,5 @@ Please remember to sync with the class repo frequently:
 
 ```
 git fetch upstream
-git merge upstream/master master
+git merge upstream/main main
 ```

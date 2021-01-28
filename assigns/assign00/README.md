@@ -18,9 +18,6 @@ my github id is 'hwxi'.
 
 ## Task 2 (10 bonus points)
 
-Installing ATS on your own laptop computer. You can find information
-on installing ATS [here](http://www.ats-lang.org). Feel free to post
-related questions on the class Piazza page.
-
-
- 
+Installing the latest version of ATS from the source on your own
+laptop computer. You can find information on installing ATS [here](http://www.ats-lang.org).
+Please feel free to post related questions on Piazza page for the class.
