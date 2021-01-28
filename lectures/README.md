@@ -19,3 +19,7 @@ corresponds to tail-recursive functions in functional programming.
 https://bostonu.zoom.us/rec/share/IHIMsYC0PMAFYGD-T_9VSvsdNZRJ6wDZA2uv5eFFMEBoJcriB6H105nRq757YAKt.0sRwSX4D2ekYIW6B (Access Passcode: 941+TX@L)
 
 ## Lecture-01-28(Thu)
+
+#### Recording:
+
+https://bostonu.zoom.us/rec/share/YCfuSJvugu75epf88_UPJbSA-Sw-8gby2wnnmNsOopw8gZmip4WtpTePqJSHR0dq.KtdbBVbYLAgW8zoS (Access Password: D?Kq65fJ) 
