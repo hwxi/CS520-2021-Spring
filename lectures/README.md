@@ -20,6 +20,10 @@ https://bostonu.zoom.us/rec/share/IHIMsYC0PMAFYGD-T_9VSvsdNZRJ6wDZA2uv5eFFMEBoJc
 
 ## Lecture-01-28(Thu)
 
+Compared with imperative programs, functional programs are relatively
+easier to reason about in general. So we are to start with functional
+programming.
+
 #### Recording:
 
 https://bostonu.zoom.us/rec/share/YCfuSJvugu75epf88_UPJbSA-Sw-8gby2wnnmNsOopw8gZmip4WtpTePqJSHR0dq.KtdbBVbYLAgW8zoS (Access Password: D?Kq65fJ) 
