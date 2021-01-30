@@ -10,7 +10,7 @@ PATSCC=patscc # for ATS2
 
 all::
 all:: \
-assign01_test
+assign01_test; time ./$<
 
 ######
 

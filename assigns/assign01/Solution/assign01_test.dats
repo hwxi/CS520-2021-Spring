@@ -12,19 +12,37 @@ For testing assign01
 //
 val () =
 println!
-("Testing [int_test]!")
+("Testing [int_test]:")
 val () =
-assertloc
-(int_test() =
- $extval(int, "sizeof(int)"))
+println!
+("int_test() = ", int_test())
+val () =
+println!
+( "sizeof(int) = "
+, $extval(int, "sizeof(int)"))
+//
+val () =
+if
+( int_test()
+= 8*$extval(int, "sizeof(int)"))
+then
+println!("Testing [int_test] passed!")
+else
+println!("Testing [int_test] failed!")
 //
 (* ****** ****** *)
 //
 val () =
 println!
 ("Testing [ghaap/gheep]!")
+//
 val () =
-assertloc(ghaap(3) = gheep(3))
+if
+(ghaap(3) = gheep(3))
+then
+println!("Testing [ghaap/gheep] passed!")
+else
+println!("Testing [ghaap/gheep] failed!")
 //
 (* ****** ****** *)
 
@@ -79,14 +97,41 @@ val xs2 = fromto(N1, N1+N2)
 val ( ) =
 println!
 ("Testing [intlist_append]!")
+//
+val () =
+if
+(  fromto(0, N1+N2) =
+   intlist_append(xs1 , xs2)  )
+then
+println!("Testing [intlist_append] passed!")
+else
+println!("Testing [intlist_append] failed!")
+//
+(* ****** ****** *)
+//
+val () =
+assertloc
+( int_test()
+= 8*$extval(int, "sizeof(int)")
+)
+val () =
+assertloc
+( ghaap(5) = gheep(5) )
 val ( ) =
 assertloc
 (  fromto(0, N1+N2) =
-   intlist_append(xs1, xs2)  )
+   intlist_append(xs1 , xs2)  )
+//
+val () =
+println!
+("==============================")
+val () =
+println!
+("All the tests have been passed!!!")
 //
 (* ****** ****** *)
 
-implement main0() = { (*nothing*) }
+implement main0() = { (*nothing-to-do*) }
 
 (* ****** ****** *)
 
