@@ -24,6 +24,9 @@ Compared with imperative programs, functional programs are relatively
 easier to reason about in general. So we are to start with functional
 programming.
 
+The feature of datatypes is introduced and some examples involving pattern-matching
+are given.
+
 #### Recording:
 
 https://bostonu.zoom.us/rec/share/YCfuSJvugu75epf88_UPJbSA-Sw-8gby2wnnmNsOopw8gZmip4WtpTePqJSHR0dq.KtdbBVbYLAgW8zoS (Access Password: D?Kq65fJ) 
