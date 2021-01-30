@@ -3,11 +3,13 @@ For testing assign01
 *)
 
 (* ****** ****** *)
-
+(*
+#include
+"./../assign01.dats"
+*)
 #include
 "./..\
 /MySolution/assign01_sol.dats"
-
 (* ****** ****** *)
 //
 val () =
@@ -64,6 +66,20 @@ loop
 ( n2 - 1
 , intlist_cons(n2-1, res)) else res
 }
+
+(* ****** ****** *)
+
+fun
+print_intlist
+(xs: intlist) =
+(
+case+ xs of
+|
+intlist_nil() => ()
+|
+intlist_cons(x0, xs) =>
+(print(x0); print(';'); print_intlist(xs))
+)
 
 (* ****** ****** *)
 
