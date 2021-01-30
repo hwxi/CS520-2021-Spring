@@ -9,7 +9,12 @@ PATSCC=patscc # for ATS2
 ######
 
 all::
-all:: \
+all:: regress
+all:: cleanall
+
+######
+
+regress:: \
 assign01_test; time ./$<
 
 ######
