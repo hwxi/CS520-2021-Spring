@@ -4,15 +4,15 @@ Please see assign01.dats.
 
 This assignment is due Tuesday, the 2nd of February.
 
-1. Before submitting, please make sure that you have a README.md in
+Before submitting, please make sure that you have a README.md in
 your MySolution directory, which (very) briefly describes what you
 have done for this assignment. In particular, you should state clearly
 that what is submitted by you is YOUR OWN CODE. If there is collaboration,
 you should clearly state it as well.
 
-2. Before submitting, please make sure that you have the following-like
-file in your MySolution directory which contains some output from
-testing your code:
+Before submitting, please make sure that you have the
+following-like file in your MySolution directory which contains
+some [output](./Solution/assign01_test.output) from testing your code:
 
 https://github.com/hwxi/CS520-2021-Spring/blob/main/assigns/assign01/Solution/assign01_test.output
 
