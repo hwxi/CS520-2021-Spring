@@ -21,7 +21,7 @@ assign01_test; time ./$<
 
 assign01_test: \
 assign01_test.dats ; \
-$(PATSCC) -DATS_MEMALLOC_LIBC -o $@ $<
+$(PATSCC) -DATS_MEMALLOC_LIBC -fwrapv -o $@ $<
 
 ######
 
