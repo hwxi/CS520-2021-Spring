@@ -10,7 +10,7 @@ myoptn(a:t@ype) =
 |
 myoptn_nil of ()
 |
-myoptn_cons of (a, myoptn(a))
+myoptn_cons of (a)
 //
 (* ****** ****** *)
 //
