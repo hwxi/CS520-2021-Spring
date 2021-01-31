@@ -2,15 +2,22 @@
 (*
 ** 
 ** Finding the number
-** of bits in int-values
+** of bits used in C
+** int-representation
+** That is, find out the
+** value of 8 * sizeof(int).
 **
 *)
 (* ****** ****** *)
 //
 // HX: 5 points
 // The function int_test should
-// return the size of an integer in C
-// where the size means the number of bits.
+// return the size of an integer in C,
+// where the size means the number of bits
+// used in the representation of the integer.
+// All the int-values (of the type int) in C
+// use the same number of bits.
+//
 // Note that you should only use comparison
 // and addition in the implementation of the
 // following function [int_test].
