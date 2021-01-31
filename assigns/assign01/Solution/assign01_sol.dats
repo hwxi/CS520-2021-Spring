@@ -14,18 +14,18 @@
 (* ****** ****** *)
 
 implement
-int_test() = 0
+int_test() = 0 // dummy
 
 (* ****** ****** *)
 
 implement
-gheep(n) = ghaap(n)
+gheep(n) = ghaap(n) // dummy
 
 (* ****** ****** *)
 
 implement
 intlist_append 
-(xs, ys) = intlist_nil()
+(xs, ys) = intlist_nil() // dummy
 
 (* ****** ****** *)
 
