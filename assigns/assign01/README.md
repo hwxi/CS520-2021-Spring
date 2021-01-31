@@ -4,6 +4,11 @@ Please see assign01.dats.
 
 This assignment is due Tuesday, the 2nd of February.
 
+All of your submitted code should be contained in the file
+MySolution/assign01_sol.dats. Here is an example of such a file:
+
+https://github.com/hwxi/CS520-2021-Spring/blob/main/assigns/assign01/Solution/assign01_sol.dats
+
 Before submitting, please make sure that you have a README.md in
 your MySolution directory, which (very) briefly describes what you
 have done for this assignment. In particular, you should state clearly
