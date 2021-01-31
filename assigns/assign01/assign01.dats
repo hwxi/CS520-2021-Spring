@@ -4,7 +4,7 @@
 ** Finding the number
 ** of bits used in C
 ** int-representation
-** That is, find out the
+** That is, finding out the
 ** value of 8 * sizeof(int).
 **
 *)
@@ -60,7 +60,7 @@ intlist =
 //
 // intlist_append returns the concatenation
 // of two given integer lists. For instance,
-// given xs=(0,2,4) and ys = (1,3,5), then the
+// given xs=(0,2,4) and ys=(1,3,5), then the
 // returned list is (0, 2, 4, 1, 3, 5)
 // Please give a tail-recursive implementation
 // of intlist_append.
