@@ -36,7 +36,7 @@ println!("Testing [int_test] failed!")
 //
 val () =
 println!
-("Testing [ghaap/gheep]!")
+("Testing [ghaap/gheep]:")
 //
 val () =
 if
@@ -112,7 +112,7 @@ val xs1 = fromto(0, N1)
 val xs2 = fromto(N1, N1+N2)
 val ( ) =
 println!
-("Testing [intlist_append]!")
+("Testing [intlist_append]:")
 //
 val () =
 if
