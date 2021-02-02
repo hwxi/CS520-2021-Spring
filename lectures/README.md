@@ -34,7 +34,7 @@ https://bostonu.zoom.us/rec/share/YCfuSJvugu75epf88_UPJbSA-Sw-8gby2wnnmNsOopw8gZ
 ## Lecture-02-02(Tue)
 
 A brief introduction to polymorphic datatypes is given. With such
-datypes, template functions are introduced. Please see the some related code in the mylib directory.
+datypes, template functions are introduced. Please see some related code in the mylib directory.
 
 #### Recording:
 
