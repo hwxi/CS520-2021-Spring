@@ -30,3 +30,12 @@ are given.
 #### Recording:
 
 https://bostonu.zoom.us/rec/share/YCfuSJvugu75epf88_UPJbSA-Sw-8gby2wnnmNsOopw8gZmip4WtpTePqJSHR0dq.KtdbBVbYLAgW8zoS (Access Password: D?Kq65fJ) 
+
+## Lecture-02-02(Tue)
+
+A brief introduction to polymorphic datatypes is given. With such
+datypes, template functions are introduced. Please see the some related code in the mylib directory.
+
+#### Recording:
+
+https://bostonu.zoom.us/rec/share/oZqFTykeFNe-40GcX-tiIIZ1z5tGnbaKZJorDFRJ5AcA42Z7rqKzaG5XHYn4A_rD.uUS_IvvLJpVf0amV (Access Password: v7XW.$4x) 
