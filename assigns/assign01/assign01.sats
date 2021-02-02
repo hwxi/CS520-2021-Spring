@@ -22,31 +22,19 @@
 // and addition in the implementation of the
 // following function [int_test].
 //
-extern fun int_test(): int
+fun int_test(): int
 //
 (* ****** ****** *)
-//
-// HX: 10 points
-// The function [gheep] is defined as follows:
-//
-fun ghaap(n: int): int =
-(
-  if
-  (n >= 2)
-  then n * ghaap(n-1) * ghaap(n-2)
-  else (n+1)
-  // end of [if]
-)
 //
 // Please implement a tail-recursive function gheep
 // such thats gheep(n) = ghaap(n) for all integers n
 //
-extern fun gheep(n: int): int
+fun gheep(n: int): int
 //
 (* ****** ****** *)
 //
 datatype
-intlist = // monomorphic
+intlist =
 | intlist_nil of ()
 | intlist_cons of (int, intlist)
 //
@@ -65,10 +53,9 @@ intlist = // monomorphic
 // Please give a tail-recursive implementation
 // of intlist_append.
 //
-extern
 fun
 intlist_append : (intlist, intlist) -> intlist
 //
 (* ****** ****** *)
 
-(* end of [assign01.dats] *)
+(* end of [assign01.sats] *)

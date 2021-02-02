@@ -32,6 +32,9 @@ fun
 fprint_myoptn
 (out: FILEref, xs : myoptn(a)): void
 
+#symload print with print_myoptn
+#symload fprint with fprint_myoptn
+
 (* ****** ****** *)
 //
 fun
@@ -50,6 +53,9 @@ fun
 fprint_mylist
 (out: FILEref, xs : mylist(a)): void
 
+#symload print with print_mylist
+#symload fprint with fprint_mylist
+
 (* ****** ****** *)
 //
 fun
@@ -62,18 +68,18 @@ mylist_length
 fun
 {a:t@ype}
 mylist_append
-( mylist(a), mylist(a) ): void
+( mylist(a), mylist(a) ): mylist(a)
 //
 (* ****** ****** *)
 //
 fun
 {a:t@ype}
 mylist_reverse
-( xs : mylist(a) ): void
+( xs : mylist(a) ): mylist(a)
 fun
 {a:t@ype}
 mylist_rappend
-( mylist(a), mylist(a) ): void
+( mylist(a), mylist(a) ): mylist(a)
 //
 (* ****** ****** *)
 
