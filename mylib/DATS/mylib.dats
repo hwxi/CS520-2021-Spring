@@ -54,30 +54,6 @@ case+ xs of
 
 implement
 {a}(*tmp*)
-mylist_length
-  ( xs ) =
-(
-  auxloop(0, xs)
-) where
-{
-fun
-auxloop
-( i0: int
-, xs: mylist(a)): int =
-(
-case+ xs of
-| mylist_nil() => i0
-| mylist_cons(_, xs) =>
-  (
-    auxloop(i0+1, xs)
-  )
-)
-} (* end of [mylist_length] *)
-
-(* ****** ****** *)
-
-implement
-{a}(*tmp*)
 print_mylist(xs) =
 fprint_mylist<a>(stdout_ref, xs)
 
@@ -113,6 +89,40 @@ case+ xs of
   } (*where*) // mylist_cons
 )
 } (* end of [fprint_mylist] *)
+
+(* ****** ****** *)
+
+implement
+{a}(*tmp*)
+mylist_length
+  ( xs ) =
+(
+  auxloop(0, xs)
+) where
+{
+fun
+auxloop
+( i0: int
+, xs: mylist(a)): int =
+(
+case+ xs of
+| mylist_nil() => i0
+| mylist_cons(_, xs) =>
+  (
+    auxloop(i0+1, xs)
+  )
+)
+} (* end of [mylist_length] *)
+
+(* ****** ****** *)
+
+implement
+{a}(*tmp*)
+mylist_reverse
+  ( xs ) =
+(
+mylist_rappend<a>(xs, mylist_nil())
+)
 
 (* ****** ****** *)
 
