@@ -126,4 +126,40 @@ mylist_rappend<a>(xs, mylist_nil())
 
 (* ****** ****** *)
 
+implement
+{a}(*tmp*)
+mylist_equal
+  (xs1, xs2) =
+(
+  loop(xs1, xs2)
+) where
+{
+fun
+loop
+( xs1: mylist(a)
+, xs2: mylist(a)): bool =
+(
+case+ xs1 of
+|
+mylist_nil() =>
+(
+case+ xs2 of
+| mylist_nil() => true
+| mylist_cons _ => false
+)
+|
+mylist_cons(x1, xs1) =>
+(
+case+ xs2 of
+| mylist_nil() => false
+| mylist_cons(x2, xs2) =>
+  if
+  geq_val_val<a>(x1, x2)
+  then loop(xs1, xs2) else false
+)
+)
+} (* end of [mylist_equal] *)
+
+(* ****** ****** *)
+
 (* end of [mylib.dats] *)

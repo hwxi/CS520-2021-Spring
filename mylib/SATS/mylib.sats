@@ -82,5 +82,14 @@ mylist_rappend
 ( mylist(a), mylist(a) ): mylist(a)
 //
 (* ****** ****** *)
+//
+fun
+{a:t@ype}
+mylist_equal
+(mylist(a), mylist(a)): bool
+//
+#symload = with mylist_equal
+//
+(* ****** ****** *)
 
 (* end of [mylib.sats] *)
