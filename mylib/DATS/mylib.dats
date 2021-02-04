@@ -162,4 +162,51 @@ case+ xs2 of
 
 (* ****** ****** *)
 
+implement
+{a}{b}
+mylist_map
+(xs, f0) =
+mylist_reverse<b>
+(mylist_maprev<a><b>(xs, f0))
+
+implement
+{a}{b}
+mylist_maprev
+(xs, f0) =
+loop(xs, mylist_nil()) where
+{
+fun
+loop
+( xs: mylist(a)
+, ys: mylist(b)): mylist(b) =
+(
+case+ xs of
+| mylist_nil() => ys
+| mylist_cons(x0, xs) =>
+  loop(xs, mylist_cons(f0(x0), ys))
+)
+} (* end of [mylist_maprev] *)
+
+(* ****** ****** *)
+
+implement
+{a}(*tmp*)
+mylist_foreach
+(xs, f0) = loop(xs) where
+{
+fun
+loop
+( xs: mylist(a)): void =
+(
+case+ xs of
+| mylist_nil() => ()
+| mylist_cons(x0, xs) =>
+  let
+  val () = f0(x0) in loop(xs)
+  end
+)
+} (* end of [mylist_foreach] *)
+
+(* ****** ****** *)
+
 (* end of [mylib.dats] *)

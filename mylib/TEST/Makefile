@@ -7,7 +7,13 @@ all:: regress
 all:: cleanall
 
 regress:: \
+test_myoptn; time ./test_myoptn
+regress:: \
 test_mylist; time ./test_mylist
+
+test_myoptn: \
+test_myoptn.dats; \
+$(PATSCC) -o $@ -DATS_MEMALLOC_LIBC $<
 
 test_mylist: \
 test_mylist.dats; \

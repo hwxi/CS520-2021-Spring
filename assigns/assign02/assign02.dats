@@ -40,7 +40,7 @@ given integer ncol.
 *)
 //
 datatype
-matrix(a:t@ype) =
+matrix(a:t@ype) = // row-major
 MATRIX of
 ( mylist(mylist(a)), int(*ncol*) )
 //

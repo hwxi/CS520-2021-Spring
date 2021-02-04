@@ -91,5 +91,28 @@ mylist_equal
 #symload = with mylist_equal
 //
 (* ****** ****** *)
+//
+fun
+{a:t@ype}
+{b:t@ype}
+mylist_map
+( xs: mylist(a)
+, f0: (a) -<cloref1> b): mylist(b)
+fun
+{a:t@ype}
+{b:t@ype}
+mylist_maprev
+( xs: mylist(a)
+, f0: (a) -<cloref1> b): mylist(b)
+//
+(* ****** ****** *)
+//
+fun
+{a:t@ype}
+mylist_foreach
+( xs: mylist(a)
+, f0: (a) -<cloref1> void): void
+//
+(* ****** ****** *)
 
 (* end of [mylib.sats] *)
