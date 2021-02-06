@@ -38,13 +38,14 @@ datypes, template functions are introduced. Please see some related code in the 
 
 #### Recording:
 
-## Lecture-02-02(Thu)
+https://bostonu.zoom.us/rec/share/oZqFTykeFNe-40GcX-tiIIZ1z5tGnbaKZJorDFRJ5AcA42Z7rqKzaG5XHYn4A_rD.uUS_IvvLJpVf0amV (Access Password: v7XW.$4x)
+
+## Lecture-02-04(Thu)
 
 Some explanation on #include and #staload is given. In general, #staload is the proper way to access
 a module. Also, please take a look at the mylib directory, which is created to store the library built
 for this class.
 
-https://bostonu.zoom.us/rec/share/oZqFTykeFNe-40GcX-tiIIZ1z5tGnbaKZJorDFRJ5AcA42Z7rqKzaG5XHYn4A_rD.uUS_IvvLJpVf0amV (Access Password: v7XW.$4x)
-
 #### Recording:
+
 https://bostonu.zoom.us/rec/share/rwYxZMT0dDxaa2PC9Y8lt0k-WwV-vmastLnGwXTA_CYDrp4in0dMIxB5LZ_Him3q.hLY9I3Xu01cVRFJ5 (Access Passcode: UQ9e4.Gd) 
