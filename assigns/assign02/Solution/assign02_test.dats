@@ -17,11 +17,11 @@ For testing assign02
 #staload "./../assign02.dats"
 //
 (* ****** ****** *)
-(*
+// (*
 #staload
 "./..\
 /MySolution/assign02_sol.dats"
-*)
+// *)
 (* ****** ****** *)
 
 val xs =
