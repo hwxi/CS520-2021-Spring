@@ -47,6 +47,38 @@ mylist_append<string>(xs, mylist_append<string>(ys, zs))
 )
 (* ****** ****** *)
 
+val xs1 = xs
+val xs2 = ys
+val xs3 = ys
+val xs4 = xs
+val M00 = MATRIX
+(
+mylist_cons
+( xs1
+, mylist_cons
+  ( xs1
+  , mylist_cons
+    ( xs1
+    , mylist_cons(xs4, mylist_nil()))))
+, 6 // ncol = 6
+) (* end of [MATRIX] *)
+
+val-true = matrix_validate(M00)
+
+(* ****** ****** *)
+//
+val+
+MATRIX
+(yss, nrow) =
+matrix_transpose(M00)
+//
+val ( ) =
+assertloc(nrow = 4)
+val ( ) =
+assertloc(mylist_length(yss) = 6)
+//
+(* ****** ****** *)
+
 implement main0() = { (*nothing-to-do*) }
 
 (* ****** ****** *)
