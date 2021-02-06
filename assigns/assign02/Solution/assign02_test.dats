@@ -9,6 +9,9 @@ For testing assign02
 #staload
 "./../../..\
 /mylib/SATS/mylib.sats"
+#staload _ =
+"./../../..\
+/mylib/DATS/mylib.dats"
 (* ****** ****** *)
 //
 #staload "./../assign02.dats"
