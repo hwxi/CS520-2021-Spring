@@ -21,7 +21,7 @@ some [output](./Solution/assign01_test.output) from testing your code:
 
 https://github.com/hwxi/CS520-2021-Spring/blob/main/assigns/assign01/Solution/assign01_test.output
 
-For instance, I generated my assign01_test.out by executing the following
+For instance, I generated my assign01_test.output by executing the following
 command-line in MySolution directory:
 
 ```
