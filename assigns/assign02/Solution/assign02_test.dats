@@ -82,6 +82,15 @@ assertloc(mylist_length(yss) = 6)
 //
 (* ****** ****** *)
 
+val () =
+println!
+("==============================")
+val () =
+println!
+("All the tests have been passed!!!")
+
+(* ****** ****** *)
+
 implement main0() = { (*nothing-to-do*) }
 
 (* ****** ****** *)
