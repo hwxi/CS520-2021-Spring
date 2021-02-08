@@ -18,3 +18,10 @@ following-like file in your MySolution directory which contains
 some [output](./Solution/assign02_test.output) from testing your code:
 
 https://github.com/hwxi/CS520-2021-Spring/blob/main/assigns/assign02/Solution/assign02_test.output
+
+For instance, I generated my assign02_test.out by executing the following
+command-line in MySolution directory:
+
+```
+make -C ../Solution all > assign02_test.output 2>&1
+```
