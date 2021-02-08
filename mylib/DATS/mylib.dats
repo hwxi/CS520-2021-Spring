@@ -191,6 +191,26 @@ case+ xs of
 
 implement
 {a}(*tmp*)
+mylist_forall
+(xs, f0) = loop(xs) where
+{
+fun
+loop
+( xs: mylist(a)): bool =
+(
+case+ xs of
+| mylist_nil() => true
+| mylist_cons(x0, xs) =>
+  if
+  f0(x0)
+  then loop(xs) else false
+)
+} (* end of [mylist_forall] *)
+
+(* ****** ****** *)
+
+implement
+{a}(*tmp*)
 mylist_foreach
 (xs, f0) = loop(xs) where
 {

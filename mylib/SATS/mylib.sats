@@ -109,6 +109,12 @@ mylist_maprev
 //
 fun
 {a:t@ype}
+mylist_forall
+( xs: mylist(a)
+, f0: (a) -<cloref1> bool): bool
+//
+fun
+{a:t@ype}
 mylist_foreach
 ( xs: mylist(a)
 , f0: (a) -<cloref1> void): void

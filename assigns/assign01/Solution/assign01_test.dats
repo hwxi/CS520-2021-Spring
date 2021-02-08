@@ -96,8 +96,8 @@ case+ (xs1, xs2) of
 ( intlist_cons(x1, xs1)
 , intlist_cons(x2, xs2)) =>
   if
-  (x1 = x2)
-  then true
+  (x1 != x2)
+  then false
   else intlist_equal(xs1, xs2)
 | ( _(*else*) , _(*else*) ) => false
 )
