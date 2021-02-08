@@ -27,7 +27,7 @@ extern fun int_test(): int
 (* ****** ****** *)
 //
 // HX: 10 points
-// The function [gheep] is defined as follows:
+// The function [ghaap] is defined as follows:
 //
 fun ghaap(n: int): int =
 (
