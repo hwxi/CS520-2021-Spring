@@ -229,4 +229,123 @@ case+ xs of
 
 (* ****** ****** *)
 
+implement
+{a}{r}
+mylist_foldleft
+(
+  xs, r0, f0
+) = loop(xs, r0) where
+{
+fun
+loop(xs: mylist(a), r0: r): r =
+(
+case+ xs of
+| mylist_nil() => r0
+| mylist_cons(x0, xs) => loop(xs, f0(r0, x0))
+)
+}
+
+(* ****** ****** *)
+
+implement
+{a}(*tmp*)
+mylist_length(xs) =
+mylist_foldleft<a><int>
+( xs
+, 0, lam(r0, x0) => r0 + 1)
+
+(* ****** ****** *)
+
+implement
+{a}(*tmp*)
+mylist_rappend
+(xs, ys) =
+mylist_foldleft<a><mylist(a)>
+( xs
+, ys, lam(r0, x0) => mylist_cons(x0, r0))
+
+implement
+{a}(*tmp*)
+mylist_reverse(xs) =
+mylist_foldleft<a><mylist(a)>
+( xs
+, mylist_nil(), lam(r0, x0) => mylist_cons(x0, r0))
+
+(* ****** ****** *)
+
+(*
+implement
+{a}(*tmp*)
+mylist_append(xs, ys) =
+mylist_rappend<a>(mylist_reverse<a>(xs), ys)
+*)
+
+(* ****** ****** *)
+
+implement
+{a}{b}(*tmp*)
+mylist_map(xs, f0) =
+mylist_reverse<b>(mylist_maprev<a><b>(xs, f0))
+
+implement
+{a}{b}(*tmp*)
+mylist_maprev(xs, f0) =
+mylist_foldleft<a><mylist(b)>
+( xs
+, mylist_nil(), lam(r0, x0) => mylist_cons(f0(x0), r0))
+
+(* ****** ****** *)
+
+(*
+implement
+{a}{r}
+mylist_foldright
+(
+  xs, r0, f0
+) = auxlst(xs, r0) where
+{
+fun
+auxlst(xs: mylist(a), r0: r): r =
+(
+case+ xs of
+| mylist_nil() => r0
+| mylist_cons(x0, xs) => f0(x0, auxlst(xs, r0))
+)
+}
+*)
+
+implement
+{a}{r}
+mylist_foldright
+(
+  xs, r0, f0
+) =
+let
+val xs = mylist_reverse<a>(xs)
+in
+  mylist_foldleft<a><r>(xs, r0, lam(r0, x0) => f0(x0, r0))
+end // end of [mylist_foldright]
+
+(* ****** ****** *)
+
+(*
+implement
+{a}{b}
+mylist_map(xs, f0) =
+mylist_foldright<a><mylist(b)>
+( xs
+, mylist_nil()
+, lam(x0, r0) => mylist_cons(x0, r0))  
+*)
+
+(* ****** ****** *)
+
+implement
+{a}
+mylist_append(xs, ys) =
+mylist_foldright<a><mylist(a)>
+(xs, ys, lam(x0, r0) => mylist_cons(x0, r0))  
+
+(* ****** ****** *)
+
 (* end of [mylib.dats] *)

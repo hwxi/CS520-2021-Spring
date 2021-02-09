@@ -120,5 +120,25 @@ mylist_foreach
 , f0: (a) -<cloref1> void): void
 //
 (* ****** ****** *)
+//
+fun
+{a:t@ype}
+{r:t@ype}
+mylist_foldleft
+( xs: mylist(a)
+, r0: r
+, f0: (r, a) -<cloref1> r): ( r )
+//
+(* ****** ****** *)
+//
+fun
+{a:t@ype}
+{r:t@ype}
+mylist_foldright
+( xs: mylist(a)
+, r0: r
+, f0: (a, r) -<cloref1> r): ( r )
+//
+(* ****** ****** *)
 
 (* end of [mylib.sats] *)

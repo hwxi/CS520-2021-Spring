@@ -1,0 +1,2 @@
+
+Lists are EAGER. And streams are LAZY.
