@@ -8,9 +8,13 @@ PATSCC=patscc # for ATS2
 
 ######
 
-all::
+all:: date
 all:: regress
 all:: cleanall
+
+######
+
+date: ; echo `date`
 
 ######
 

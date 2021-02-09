@@ -45,6 +45,35 @@ MATRIX of
 ( mylist(mylist(a)), int(*ncol*) )
 //
 (* ****** ****** *)
+
+extern
+fun
+{a:t@ype}
+matrix_get_nrow(M: matrix(a)): int
+extern
+fun
+{a:t@ype}
+matrix_get_ncol(M: matrix(a)): int
+
+(* ****** ****** *)
+
+implement
+{a}(*tmp*)
+matrix_get_nrow(M) =
+(
+case+ M of
+MATRIX(xss, ncol) =>
+mylist_length<mylist(a)>(xss)
+)
+
+implement
+{a}(*tmp*)
+matrix_get_ncol(M) =
+(
+case+ M of MATRIX(xss, ncol) => ncol
+)
+
+(* ****** ****** *)
 //
 (*
 Given M of the form MATRIX(xss, ncol),
