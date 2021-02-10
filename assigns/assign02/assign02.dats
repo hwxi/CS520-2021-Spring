@@ -74,6 +74,37 @@ case+ M of MATRIX(xss, ncol) => ncol
 )
 
 (* ****** ****** *)
+
+extern
+fun
+{a:t@ype}
+print_matrix(M: matrix(a)): void
+extern
+fun
+{a:t@ype}
+fprint_matrix
+(out: FILEref, M: matrix(a)): void
+
+#symload print with print_matrix
+#symload fprint with fprint_matrix
+
+(* ****** ****** *)
+implement
+{a}
+print_matrix(M) =
+fprint_matrix(stdout_ref, M)
+(* ****** ****** *)
+implement
+{a}
+fprint_matrix(out, M) =
+let
+val+
+MATRIX(xss, ncol) = M
+in
+mylist_foreach<mylist(a)>
+(xss, lam (xs) => fprintln!(out, xs))
+end // end of [fprint_matrix]
+(* ****** ****** *)
 //
 (*
 Given M of the form MATRIX(xss, ncol),
