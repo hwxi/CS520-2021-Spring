@@ -59,21 +59,32 @@ val M00 = MATRIX
 mylist_cons
 ( xs1
 , mylist_cons
-  ( xs1
+  ( xs2
   , mylist_cons
-    ( xs1
+    ( xs3
     , mylist_cons(xs4, mylist_nil()))))
 , 6 // ncol = 6
 ) (* end of [MATRIX] *)
+
+(* ****** ****** *)
+
+val () =
+println!("M00:\n", M00)
+
+(* ****** ****** *)
 
 val-true = matrix_validate(M00)
 
 (* ****** ****** *)
 //
-val+
-MATRIX
-(yss, nrow) =
+val M01 =
 matrix_transpose(M00)
+//
+val () =
+println!("M01:\n", M01)
+//
+val+
+MATRIX(yss, nrow) = M01
 //
 val ( ) =
 assertloc(nrow = 4)
