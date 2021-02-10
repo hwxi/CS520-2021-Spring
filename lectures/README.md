@@ -48,4 +48,15 @@ for this class.
 
 #### Recording:
 
-https://bostonu.zoom.us/rec/share/rwYxZMT0dDxaa2PC9Y8lt0k-WwV-vmastLnGwXTA_CYDrp4in0dMIxB5LZ_Him3q.hLY9I3Xu01cVRFJ5 (Access Passcode: UQ9e4.Gd) 
+https://bostonu.zoom.us/rec/share/rwYxZMT0dDxaa2PC9Y8lt0k-WwV-vmastLnGwXTA_CYDrp4in0dMIxB5LZ_Him3q.hLY9I3Xu01cVRFJ5 (Access Passcode: UQ9e4.Gd)
+
+## Lecture-02-09(Tue)
+
+More time is spent on building the mylib library. In particular, the
+two combinators mylist_foldleft and mylist_foldright are implemented
+and a few previously implemented combinators are re-implemented based
+on these two. Also, streams as a lazy form of lists are briefly introduced.
+  
+#### Recording:
+
+https://bostonu.zoom.us/rec/share/s5OrmHuj329VOITX9gnOae7EbsYVJFJi8psmJPZ-XyOdSnsF19oHKPwYgwECuEiD.SAOyZFnGSzctWbel (Access Password: Lf0?gxc9) 
