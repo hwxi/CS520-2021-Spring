@@ -348,4 +348,63 @@ mylist_foldright<a><mylist(a)>
 
 (* ****** ****** *)
 
+(*
+implement
+{a}{b}
+mystrm_map
+( xs, f0 ) =
+$delay
+(
+case+ !xs of
+| stream_nil() =>
+  stream_nil()
+| stream_cons(x0, xs) =>
+  stream_cons(f0(x0), mystrm_map<a><b>(xs, f0))
+)
+*)
+implement
+{a}{b}
+mystrm_map
+( xs, f0 ) =
+auxstrm(xs) where
+{
+fun
+auxstrm
+(xs: stream(a)): stream(b) =
+$delay
+(
+case+ !xs of
+| stream_nil() =>
+  stream_nil()
+| stream_cons(x0, xs) => stream_cons(f0(x0), auxstrm(xs))
+)
+} (* end of [mystrm_map] *)
+
+(* ****** ****** *)
+
+implement
+{a}(*tmp*)
+mystrm_filter
+( xs, f0 ) =
+auxstrm(xs) where
+{
+fun
+auxstrm
+(xs: stream(a)): stream(a) =
+$delay
+(
+case+ !xs of
+|
+stream_nil() =>
+stream_nil()
+|
+stream_cons(x0, xs) =>
+if
+f0(x0)
+then stream_cons(x0, auxstrm(xs)) else !(auxstrm(xs))
+)
+} (* end of [mystrm_filter] *)
+
+(* ****** ****** *)
+
 (* end of [mylib.dats] *)

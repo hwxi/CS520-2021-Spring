@@ -141,4 +141,34 @@ mylist_foldright
 //
 (* ****** ****** *)
 
+typedef
+mystrm(a:t@ype) = stream(a)
+
+(* ****** ****** *)
+//
+fun
+{a:t@ype}
+{b:t@ype}
+mystrm_map
+( xs: mystrm(a)
+, f0: (a) -<cloref1> b): mystrm(b)
+//
+(*
+fun
+{a:t@ype}
+{b:t@ype}
+mystrm_maprev? // No need for it!!!
+( xs: mystrm(a)
+, f0: (a) -<cloref1> b): mystrm(b)
+*)
+(* ****** ****** *)
+//
+fun
+{a:t@ype}
+mystrm_filter
+( xs: mystrm(a)
+, f0: (a) -<cloref1> bool): mystrm(a)
+//
+(* ****** ****** *)
+
 (* end of [mylib.sats] *)

@@ -59,4 +59,12 @@ on these two. Also, streams as a lazy form of lists are briefly introduced.
   
 #### Recording:
 
-https://bostonu.zoom.us/rec/share/s5OrmHuj329VOITX9gnOae7EbsYVJFJi8psmJPZ-XyOdSnsF19oHKPwYgwECuEiD.SAOyZFnGSzctWbel (Access Password: Lf0?gxc9) 
+https://bostonu.zoom.us/rec/share/s5OrmHuj329VOITX9gnOae7EbsYVJFJi8psmJPZ-XyOdSnsF19oHKPwYgwECuEiD.SAOyZFnGSzctWbel (Access Password: Lf0?gxc9)
+
+## Lecture-02-11(Thu)
+
+An introduction to (functional) streams is given; mystrm_map is implemented; sieve is implemented.
+
+#### Recording:
+
+https://bostonu.zoom.us/rec/share/oybw-6Xeu2-G6R89loLLTlbUMP8OT_oJ1mlsXSpKDscLqQye7GIObdHarsb_oOHv.xAf3SPTZmryYHWoA (Access Password: U$7#qbE.)

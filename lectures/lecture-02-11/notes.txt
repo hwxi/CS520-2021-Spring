@@ -1,0 +1,20 @@
+
+Lists are EAGER. And streams are LAZY.
+
+A stream is a lazy-value,
+which is a THUNK (that is, a nullary closure function)
+
+(*
+datatype mylist(a:t@ype) = ...
+*)
+
+datatype
+stream_con(a:t@ype) =
+| stream_nil of ()
+| stream_cons of (a, stream(a))
+
+where
+stream(a:t@ype) = lazy(stream_con(a))
+
+This is a FUNCTIONAL stream, which is recorded.
+
