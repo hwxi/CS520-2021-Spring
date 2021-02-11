@@ -67,4 +67,4 @@ An introduction to (functional) streams is given; mystrm_map is implemented; sie
 
 #### Recording:
 
-https://bostonu.zoom.us/rec/share/oybw-6Xeu2-G6R89loLLTlbUMP8OT_oJ1mlsXSpKDscLqQye7GIObdHarsb_oOHv.xAf3SPTZmryYHWoA (Access Password: U$7#qbE.)
+https://bostonu.zoom.us/rec/share/ELRNDcP9uLRtyP32al-I-89PXDmezIkNXocWuRtJJuhMgeuMLGknrVI3tGZq7K8L.eO3_ALbFsRS52o5r (Access Password: 1@HkVhO7)
