@@ -22,7 +22,7 @@ EulerTrans question).
 //
 *)
 extern
-fun
+fun{}
 stream_ln2(): stream(double)
 
 (* ****** ****** *)
@@ -35,7 +35,7 @@ stream_ln2(): stream(double)
 typedef int2 = (int, int)
 //
 extern
-fun
+fun{}
 intpair_enumerate((*void*)): stream(int2)
 //
 (* ****** ****** *)
@@ -51,7 +51,7 @@ intpair_enumerate((*void*)): stream(int2)
 // x(n+2) - (x(n+2)-x(n+1))^2 / (x(n)+x(n+2)-2*x(n+1))
 //
 extern
-fun
+fun{}
 EulerTrans(xs: stream(double)): stream(double)
 //
 (* ****** ****** *)
