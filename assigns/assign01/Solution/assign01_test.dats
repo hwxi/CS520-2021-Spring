@@ -9,7 +9,12 @@ For testing assign01
 *)
 #include
 "./..\
+/Solution/assign01_sol.dats"
+(*
+#include
+"./..\
 /MySolution/assign01_sol.dats"
+*)
 (* ****** ****** *)
 //
 val () =
