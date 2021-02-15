@@ -1,7 +1,19 @@
 \
-patscc  -DATS_MEMALLOC_LIBC -o assign01_test assign01_test.dats
-/home/hwxi/Teaching/CS520/CS520-2021-Spring/assigns/assign01/Solution/assign01_test.dats: 50(line=7, offs=1) -- 96(line=9, offs=31): error(1): the file [./../MySolution/assign01_sol.dats] is not available for inclusion.
-patsopt(TRANS1): there are [1] errors in total.
-exit(ATS): uncaught exception: _2home_2hwxi_2Research_2ATS_2dPostiats_2src_2pats_error_2esats__FatalErrorExn(1025)
-Makefile:22: recipe for target 'assign01_test' failed
-make: *** [assign01_test] Error 1
+patscc  -DATS_MEMALLOC_LIBC -fwrapv -o assign01_test assign01_test.dats
+time ./assign01_test
+Testing [int_test]:
+int_test() = 32
+sizeof(int) = 4
+Testing [int_test] passed!
+Testing [ghaap/gheep]:
+Testing [ghaap/gheep] passed!
+Testing [intlist_append]:
+Testing [intlist_append] passed!
+==============================
+All the tests have been passed!!!
+2.48user 0.54system 0:03.06elapsed 98%CPU (0avgtext+0avgdata 2188872maxresident)k
+0inputs+0outputs (0major+546939minor)pagefaults 0swaps
+rm -f *~
+rm -f *.o
+rm -f *_dats.?
+rm -f assign01_test
