@@ -183,4 +183,17 @@ mystrm_concat
 //
 (* ****** ****** *)
 
+vtypedef
+mylstrm(a:t@ype) = stream_vt(a)
+
+(* ****** ****** *)
+//
+fun
+{a:t@ype}
+mylstrm_filter
+( xs: mylstrm(a)
+, f0: (a) -<cloref1> bool): mylstrm(a)
+//
+(* ****** ****** *)
+
 (* end of [mylib.sats] *)

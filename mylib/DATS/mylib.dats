@@ -453,4 +453,31 @@ case+ !xss of
 
 (* ****** ****** *)
 
+implement
+{a}(*tmp*)
+mylstrm_filter
+( xs, f0 ) =
+auxstrm(xs) where
+{
+fun
+auxstrm
+(xs: mylstrm(a)): mylstrm(a) =
+$ldelay
+(
+case+ !xs of
+|
+~stream_vt_nil() =>
+ stream_vt_nil()
+|
+~stream_vt_cons(x0, xs) =>
+if
+f0(x0)
+then stream_vt_cons(x0, auxstrm(xs)) else !(auxstrm(xs))
+,
+~xs
+)
+} (* end of [mylstrm_filter] *)
+
+(* ****** ****** *)
+
 (* end of [mylib.dats] *)
