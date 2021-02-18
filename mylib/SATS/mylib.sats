@@ -170,5 +170,17 @@ mystrm_filter
 , f0: (a) -<cloref1> bool): mystrm(a)
 //
 (* ****** ****** *)
+//
+fun
+{a:t@ype}
+mystrm_append
+( xs: mystrm(a)
+, ys: mystrm(a)): mystrm(a)
+fun
+{a:t@ype}
+mystrm_concat
+( xss: mystrm(mystrm(a)) ) : mystrm(a)
+//
+(* ****** ****** *)
 
 (* end of [mylib.sats] *)

@@ -407,4 +407,50 @@ then stream_cons(x0, auxstrm(xs)) else !(auxstrm(xs))
 
 (* ****** ****** *)
 
+implement
+{a}(*tmp*)
+mystrm_append
+  (xs, ys) =
+(
+  auxmain(xs)
+) where
+{
+fun
+auxmain
+( xs
+: mystrm(a)): mystrm(a) =
+$delay
+(
+case+ !xs of
+| stream_nil() => !ys
+| stream_cons(x0, xs) =>
+  stream_cons(x0, auxmain(xs))
+)
+}
+
+(* ****** ****** *)
+
+implement
+{a}(*tmp*)
+mystrm_concat
+  (xss) =
+(
+  auxmain(xss)
+) where
+{
+fun
+auxmain
+( xss
+: mystrm(mystrm(a))): mystrm(a) =
+$delay
+(
+case+ !xss of
+| stream_nil() => stream_nil()
+| stream_cons(xs, xss) =>
+ !(mystrm_append<a>(xs, auxmain(xss)))
+)
+}
+
+(* ****** ****** *)
+
 (* end of [mylib.dats] *)
