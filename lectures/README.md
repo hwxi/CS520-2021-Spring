@@ -68,3 +68,13 @@ An introduction to (functional) streams is given; mystrm_map is implemented; sie
 #### Recording:
 
 https://bostonu.zoom.us/rec/share/ELRNDcP9uLRtyP32al-I-89PXDmezIkNXocWuRtJJuhMgeuMLGknrVI3tGZq7K8L.eO3_ALbFsRS52o5r (Access Password: 1@HkVhO7)
+
+## Lecture-02-18(Thu)
+
+The introduction to functional streams is wrapped up, and an introduction to linear streams is given.
+A comparison between sieve and sieve_vt is given, which shows that the latter is much more efficient
+than the former, both time-wise and memory-wise.
+
+#### Recording:
+
+https://bostonu.zoom.us/rec/share/mXWJSjXW_joz7uDVE85aaEF429cgcbWGcO-sV9OW96-XIRr9pyIZSBky_LMcRNjr.osTmp-lmBynvAC99 (Access Password: Yg7R*63R) 

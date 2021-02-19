@@ -452,6 +452,13 @@ case+ !xss of
 }
 
 (* ****** ****** *)
+//
+(*
+HX-2021-02-18:
+For linear streams
+*)
+//
+(* ****** ****** *)
 
 implement
 {a}(*tmp*)
