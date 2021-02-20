@@ -1,13 +1,27 @@
-make: Entering directory '/home/hwxi/Teaching/CS520/CS520-2021-Spring-hwxi/assigns/assign02/Solution'
+echo `date`
+Sat Feb 20 12:50:05 EST 2021
 \
 patscc  -DATS_MEMALLOC_LIBC -o assign02_test assign02_test.dats
 time ./assign02_test
+M00:
+0;1;2;3;4;5
+5;4;3;2;1;0
+5;4;3;2;1;0
+0;1;2;3;4;5
+
+M01:
+0;5;5;0
+1;4;4;1
+2;3;3;2
+3;2;2;3
+4;1;1;4
+5;0;0;5
+
 ==============================
 All the tests have been passed!!!
-0.00user 0.00system 0:00.00elapsed ?%CPU (0avgtext+0avgdata 1396maxresident)k
+0.00user 0.00system 0:00.00elapsed ?%CPU (0avgtext+0avgdata 1268maxresident)k
 0inputs+0outputs (0major+64minor)pagefaults 0swaps
 rm -f *~
 rm -f *.o
 rm -f *_dats.?
 rm -f assign02_test
-make: Leaving directory '/home/hwxi/Teaching/CS520/CS520-2021-Spring-hwxi/assigns/assign02/Solution'

@@ -71,9 +71,11 @@ https://bostonu.zoom.us/rec/share/ELRNDcP9uLRtyP32al-I-89PXDmezIkNXocWuRtJJuhMge
 
 ## Lecture-02-18(Thu)
 
-The introduction to functional streams is wrapped up, and an introduction to linear streams is given.
-A comparison between sieve and sieve_vt is given, which shows that the latter is much more efficient
-than the former, both time-wise and memory-wise.
+The introduction to functional streams is wrapped up, and an
+introduction to linear streams is started.  A comparison between sieve
+(functional) and sieve_vt (linear) is given, which shows that the
+latter is much more efficient than the former, both time-wise and
+memory-wise.
 
 #### Recording:
 
