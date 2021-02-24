@@ -62,6 +62,7 @@ fun
 myrbtree_bheight(myrbtree(a)): int
 //
 (* ****** ****** *)
+(*
 //
 A tree [t0] is a red-black tree if
 //
@@ -75,7 +76,7 @@ A tree [t0] is a red-black tree if
    both tl and tr are black (note that a
    tree is considered black if it is empty)
 //
-//
+*)
 (* ****** ****** *)
 //
 // HX: 15 points
@@ -94,6 +95,26 @@ fun
 {a:t@ype}
 myrbtree_isrbt(t0: myrbtree(a)): bool
 
+(* ****** ****** *)
+(*
+//
+// Points: 20
+//
+// Please implement
+// the following function that enumerates
+// all the pairs of positive numbers (i, j)
+// satisfying i <= j such that a pair (i1, j1)
+// is required to appear ahead of another pair
+// (i2, j2) whenever i1^3+j1^3 <= i2^3+j2^3 holds
+//
+*)
+//
+typedef int2 = (int, int)
+//
+extern
+fun{}
+intpair_enumorder((*void*)): stream(int2)
+//
 (* ****** ****** *)
 
 (* end of [assign04.dats] *)
