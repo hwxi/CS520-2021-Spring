@@ -106,6 +106,9 @@ myrbtree_isrbt(t0: myrbtree(a)): bool
 // satisfying i <= j such that a pair (i1, j1)
 // is required to appear ahead of another pair
 // (i2, j2) whenever i1^3+j1^3 <= i2^3+j2^3 holds
+// For instance,
+// the pair (2, 2) should appear before (1, 3) as
+// 2^3 + 2^3 = 8 + 8 = 16 < 1 + 3^3
 //
 *)
 //
