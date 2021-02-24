@@ -80,3 +80,15 @@ memory-wise.
 #### Recording:
 
 https://bostonu.zoom.us/rec/share/mXWJSjXW_joz7uDVE85aaEF429cgcbWGcO-sV9OW96-XIRr9pyIZSBky_LMcRNjr.osTmp-lmBynvAC99 (Access Password: Yg7R*63R) 
+
+
+## Lecture-02-23(Tue)
+
+This lecture covers the exception mechanism as is supported in ATS. A
+typical scenario of "hitting-two-birds-with-one-stone" is explained
+where using exceptions can lead to both clean code and run-time efficiency.
+
+#### Recording:
+
+https://bostonu.zoom.us/rec/share/WHFKGq8luOkgP2C5lpXUttV3ADpw-ZaS55i0Ea7wtQ-cExcc5DIHxWhJvM7TJhkD.tGSWfzM4RxAmLkbU (Access Password: Q.gtsn@0)
+  
