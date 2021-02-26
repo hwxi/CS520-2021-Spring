@@ -140,6 +140,14 @@ mylist_foldright
 , f0: (a, r) -<cloref1> r): ( r )
 //
 (* ****** ****** *)
+//
+fun
+{a:t@ype}
+mylist_mergesort
+( xs: mylist(a)
+, cmp: (a, a) -<cloref1> int): mylist(a)
+//
+(* ****** ****** *)
 
 typedef
 mystrm(a:t@ype) = stream(a)
@@ -180,6 +188,15 @@ fun
 {a:t@ype}
 mystrm_concat
 ( xss: mystrm(mystrm(a)) ) : mystrm(a)
+//
+(* ****** ****** *)
+//
+fun
+{a:t@ype}
+mystrm_merge
+( xs: mystrm(a)
+, ys: mystrm(a)
+, cmp: (a, a) -<cloref1> int): mystrm(a)
 //
 (* ****** ****** *)
 

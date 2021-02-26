@@ -247,15 +247,18 @@ case+ xs of
 
 (* ****** ****** *)
 
+(*
 implement
 {a}(*tmp*)
 mylist_length(xs) =
 mylist_foldleft<a><int>
 ( xs
 , 0, lam(r0, x0) => r0 + 1)
+*)
 
 (* ****** ****** *)
 
+(*
 implement
 {a}(*tmp*)
 mylist_rappend
@@ -263,13 +266,16 @@ mylist_rappend
 mylist_foldleft<a><mylist(a)>
 ( xs
 , ys, lam(r0, x0) => mylist_cons(x0, r0))
+*)
 
+(*
 implement
 {a}(*tmp*)
 mylist_reverse(xs) =
 mylist_foldleft<a><mylist(a)>
 ( xs
 , mylist_nil(), lam(r0, x0) => mylist_cons(x0, r0))
+*)
 
 (* ****** ****** *)
 
@@ -345,6 +351,60 @@ implement
 mylist_append(xs, ys) =
 mylist_foldright<a><mylist(a)>
 (xs, ys, lam(x0, r0) => mylist_cons(x0, r0))  
+
+(* ****** ****** *)
+
+implement
+{a}
+mylist_mergesort
+  (xs, cmp) =
+(
+  msort(xs)) where
+{
+//
+extern
+fun
+merge
+( mylist(a)
+, mylist(a)): mylist(a)
+//
+fun
+split
+(xs: mylist(a)):
+(mylist(a), mylist(a)) =
+(
+case+ xs of
+| mylist_nil() =>
+  (mylist_nil(), mylist_nil())
+| mylist_cons(x0, mylist_nil()) =>
+  (mylist_nil(), mylist_cons(x0, mylist_nil()))
+| mylist_cons(x1, mylist_cons(x2, xs)) =>
+  let
+    val (ys, zs) = split(xs)
+  in
+    (mylist_cons(x1, ys), mylist_cons(x2, zs))
+  end
+)
+//
+fun
+msort
+( xs
+: mylist(a)): mylist(a) =
+(
+case+ xs of
+|
+mylist_nil() => xs
+|
+mylist_cons
+(_, mylist_nil()) => xs
+| _ (* |xs| >= 2 *) =>
+let
+val (ys, zs) = split(xs)
+in
+  merge(msort(ys), msort(zs))
+end
+)
+}
 
 (* ****** ****** *)
 
@@ -450,6 +510,48 @@ case+ !xss of
  !(mystrm_append<a>(xs, auxmain(xss)))
 )
 }
+
+(* ****** ****** *)
+
+implement
+{a}
+mystrm_merge
+( xs, ys, cmp) =
+(
+  helper(xs, ys)
+) where
+{
+fun
+helper
+( xs: mystrm(a)
+, ys: mystrm(a)): mystrm(a) =
+$delay
+(
+case+ !xs of
+|
+stream_nil() => !ys
+|
+stream_cons(x0, xs1) =>
+(
+case+ !ys of
+|
+stream_nil() =>
+stream_cons(x0, xs1)
+|
+stream_cons(y0, ys1) =>
+let
+val
+sgn = cmp(x0, y0)
+in
+if
+sgn <= 0
+then stream_cons(x0, helper(xs1, ys))
+else stream_cons(y0, helper(xs, ys1))
+end
+)
+)
+} (* end of [mystrm_merge] *)
+
 
 (* ****** ****** *)
 //
