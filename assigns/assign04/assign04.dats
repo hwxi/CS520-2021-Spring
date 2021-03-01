@@ -25,7 +25,7 @@ myrbtree_red of
 //
 extern
 fun
-{a:t@ype}
+{a:t@ype} // 1 point
 myrbtree_size(myrbtree(a)): int
 
 (* ****** ****** *)
@@ -85,7 +85,7 @@ A tree [t0] is a red-black tree if
 // red-black tree. Please implement
 // [myrbtree_isrbt] in such a manner
 // that the implementation only traverses
-// the given tree at most ONLY.
+// the given tree at most once.
 //
 // Please see the implementation of [isAVL3]
 // for a hint.

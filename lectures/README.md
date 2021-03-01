@@ -81,7 +81,6 @@ memory-wise.
 
 https://bostonu.zoom.us/rec/share/mXWJSjXW_joz7uDVE85aaEF429cgcbWGcO-sV9OW96-XIRr9pyIZSBky_LMcRNjr.osTmp-lmBynvAC99 (Access Password: Yg7R*63R) 
 
-
 ## Lecture-02-23(Tue)
 
 This lecture covers the exception mechanism as is supported in ATS. A
@@ -91,4 +90,11 @@ where using exceptions can lead to both clean code and run-time efficiency.
 #### Recording:
 
 https://bostonu.zoom.us/rec/share/WHFKGq8luOkgP2C5lpXUttV3ADpw-ZaS55i0Ea7wtQ-cExcc5DIHxWhJvM7TJhkD.tGSWfzM4RxAmLkbU (Access Password: Q.gtsn@0)
-  
+
+## Lecture-02-25(Thu)
+
+This lecture does a review on various programming features introduced so far.
+
+#### Recording:
+
+https://bostonu.zoom.us/rec/share/JylEumRnZbRDBHrKrLCpDZbIltb9V3Lw3Rh8GQfUSFZB-kiykIAlE4SaT_a15mZ-.2YkSZniq7Tx4BmAV (Access Password: fkr2m.=a)
