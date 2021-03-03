@@ -98,3 +98,11 @@ This lecture does a review on various programming features introduced so far.
 #### Recording:
 
 https://bostonu.zoom.us/rec/share/JylEumRnZbRDBHrKrLCpDZbIltb9V3Lw3Rh8GQfUSFZB-kiykIAlE4SaT_a15mZ-.2YkSZniq7Tx4BmAV (Access Password: fkr2m.=a)
+
+## Lecture-03-02(Tue)
+
+This lecture gives a peek on type-based program verification as is supported in ATS.
+
+#### Recording:
+
+https://bostonu.zoom.us/rec/share/L-_0R3NP9wjtj3xL5z2jPZAMNbdl8o7lY5yJtLWOaRxhxEi-rgHB9Sn1A5VFZmHU.WAdebDnv7fCSecTU (Access Password: .9SZ1juH)
