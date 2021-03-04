@@ -53,7 +53,7 @@ mytree_flatten
 case+ t0 of
 | mytree_sing(x) => mylist_sing(x)
 | mytree_pair(xs, ys) =>
-  mylist_append
+  mylist_append<a>
   (mytree_flatten(xs), mytree_flatten(ys))
 )
 
