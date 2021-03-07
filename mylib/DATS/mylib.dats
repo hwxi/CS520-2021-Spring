@@ -258,7 +258,6 @@ mylist_foldleft<a><int>
 
 (* ****** ****** *)
 
-(*
 implement
 {a}(*tmp*)
 mylist_rappend
@@ -266,8 +265,8 @@ mylist_rappend
 mylist_foldleft<a><mylist(a)>
 ( xs
 , ys, lam(r0, x0) => mylist_cons(x0, r0))
-*)
 
+(* ****** ****** *)
 (*
 implement
 {a}(*tmp*)
@@ -276,6 +275,13 @@ mylist_foldleft<a><mylist(a)>
 ( xs
 , mylist_nil(), lam(r0, x0) => mylist_cons(x0, r0))
 *)
+(* ****** ****** *)
+
+implement
+{a}
+mylist_append(xs, ys) =
+mylist_foldright<a><mylist(a)>
+(xs, ys, lam(x0, r0) => mylist_cons(x0, r0))  
 
 (* ****** ****** *)
 
@@ -288,20 +294,29 @@ mylist_rappend<a>(mylist_reverse<a>(xs), ys)
 
 (* ****** ****** *)
 
+(*
 implement
-{a}{b}(*tmp*)
+{a}{b}
 mylist_map(xs, f0) =
-mylist_reverse<b>(mylist_maprev<a><b>(xs, f0))
+mylist_foldright<a><mylist(b)>
+( xs
+, mylist_nil()
+, lam(x0, r0) => mylist_cons(x0, r0))  
+*)
 
+(* ****** ****** *)
+
+(*
 implement
 {a}{b}(*tmp*)
 mylist_maprev(xs, f0) =
 mylist_foldleft<a><mylist(b)>
 ( xs
 , mylist_nil(), lam(r0, x0) => mylist_cons(f0(x0), r0))
+*)
 
 (* ****** ****** *)
-
+//
 (*
 implement
 {a}{r}
@@ -319,7 +334,7 @@ case+ xs of
 )
 }
 *)
-
+//
 implement
 {a}{r}
 mylist_foldright
@@ -331,27 +346,7 @@ val xs = mylist_reverse<a>(xs)
 in
   mylist_foldleft<a><r>(xs, r0, lam(r0, x0) => f0(x0, r0))
 end // end of [mylist_foldright]
-
-(* ****** ****** *)
-
-(*
-implement
-{a}{b}
-mylist_map(xs, f0) =
-mylist_foldright<a><mylist(b)>
-( xs
-, mylist_nil()
-, lam(x0, r0) => mylist_cons(x0, r0))  
-*)
-
-(* ****** ****** *)
-
-implement
-{a}
-mylist_append(xs, ys) =
-mylist_foldright<a><mylist(a)>
-(xs, ys, lam(x0, r0) => mylist_cons(x0, r0))  
-
+//
 (* ****** ****** *)
 
 implement
@@ -377,7 +372,8 @@ case+ xs of
 | mylist_nil() =>
   (mylist_nil(), mylist_nil())
 | mylist_cons(x0, mylist_nil()) =>
-  (mylist_nil(), mylist_cons(x0, mylist_nil()))
+  ( mylist_nil()
+  , mylist_cons(x0, mylist_nil()))
 | mylist_cons(x1, mylist_cons(x2, xs)) =>
   let
     val (ys, zs) = split(xs)
@@ -399,12 +395,11 @@ mylist_cons
 (_, mylist_nil()) => xs
 | _ (* |xs| >= 2 *) =>
 let
-val (ys, zs) = split(xs)
-in
-  merge(msort(ys), msort(zs))
+val
+(ys, zs) = split(xs) in merge(msort(ys), msort(zs))
 end
 )
-}
+} (* end of [mylist_mergesort] *)
 
 (* ****** ****** *)
 
