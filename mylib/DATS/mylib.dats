@@ -357,11 +357,28 @@ mylist_mergesort
   msort(xs)) where
 {
 //
-extern
 fun
 merge
-( mylist(a)
-, mylist(a)): mylist(a)
+( xs: mylist(a)
+, ys: mylist(a)): mylist(a) =
+(
+case+ xs of
+|
+mylist_nil() => ys
+|
+mylist_cons(x1, xs2) =>
+(
+case+ ys of
+|
+mylist_nil() => xs
+|
+mylist_cons(y1, ys2) =>
+if
+cmp(x1, y1) <= 0
+then mylist_cons(x1, merge(xs2, ys))
+else mylist_cons(y1, merge(xs, ys2))
+)
+)
 //
 fun
 split
