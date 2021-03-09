@@ -63,11 +63,11 @@ val xss = from1(0)
 val () =
 println!
 (
-"_Q1_: before flattening"
+"_Q1_: before enumeration"
 )
 //
 val
-flattened =
+_enum_ =
 mystrm_enumerate<int2>(xss)
 //
 } where
