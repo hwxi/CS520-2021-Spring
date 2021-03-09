@@ -57,8 +57,45 @@ val () = println!
 
 val _Q1_ =
 {
-// no test for it
-}
+//
+val xss = from1(0)
+//
+val () =
+println!
+(
+"_Q1_: before flattening"
+)
+//
+val
+flattened =
+mystrm_enumerate<int2>(xss)
+//
+} where
+{
+//
+typedef
+int2 = (int, int)
+//
+fun
+from1
+( i
+: int )
+: stream(stream(int2)) =
+$delay
+(
+stream_cons(from2(i, i), from1(i+1))
+)
+and
+from2
+( i
+: int
+, j: int): stream(int2) =
+$delay
+(
+stream_cons((i, j), from2(i, j+1))
+)
+//
+} (*where*) // end of [val _Q1_]
 
 (* ****** ****** *)
 
