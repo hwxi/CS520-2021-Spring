@@ -9,11 +9,11 @@
 dataprop
 POW2(int, int) =
 |
-POW2_R1(0, 1) of () // 2^0 = 1
+POW2bas(0, 1) of () // 2^0 = 1
 |
 {n:nat}
 {r:int}
-POW2_R2(n+1, 2*r) of POW2(n, r) // 2^n = r implies 2^{n+1} = 2*r
+POW2ind(n+1, 2*r) of POW2(n, r) // 2^n = r implies 2^{n+1} = 2*r
 
 (* ****** ****** *)
 //
