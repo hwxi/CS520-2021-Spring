@@ -1,0 +1,30 @@
+
+Simple types correspond to propositions in propositional logic
+
+0: int
+1: int
+
+So 0 and 1 have the same type; they CANNOT be defferentiated at
+the level of types.
+
+Dependent types correspond to predicates in predicate logic
+
+P(n): n * n > 100
+P(n, i): 0 <= i && i < n
+
+Refinements
+
+int is refined into int(n)
+
+0: int
+1: int
+
+0: int(0)
+1: int(1)
+
+fun
+{a:t@ype}
+array_get_at
+{n:int}
+{i:nat | i < n}
+(A: array(a, n), index: int(i)): a

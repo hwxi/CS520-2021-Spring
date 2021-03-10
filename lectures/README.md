@@ -106,3 +106,9 @@ This lecture gives a peek on type-based program verification as is supported in 
 #### Recording:
 
 https://bostonu.zoom.us/rec/share/L-_0R3NP9wjtj3xL5z2jPZAMNbdl8o7lY5yJtLWOaRxhxEi-rgHB9Sn1A5VFZmHU.WAdebDnv7fCSecTU (Access Password: .9SZ1juH)
+
+## Lecture-03-09(Tue)
+
+#### Recording:
+
+https://bostonu.zoom.us/rec/share/tdhR68VtpfyhA1DOtPsTnE871XACul2XPTL_PwkNhX2GK964ZkWoSXS1ZMZ51U4V.IrZmlXSiRImhg3u1 (Access Password: q9w32W$z)
