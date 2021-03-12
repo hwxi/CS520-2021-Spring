@@ -188,6 +188,18 @@ case+ xs of
 } (* end of [mylist_maprev] *)
 
 (* ****** ****** *)
+//
+implement
+{a}(*tmp*)
+mylist_filter
+(xs, f0) =
+mylist_foldright<a><mylist(a)>
+( xs
+, mylist_nil()
+, lam(x0, r0) =>
+  if f0(x0) then mylist_cons(x0, r0) else r0)
+//
+(* ****** ****** *)
 
 implement
 {a}(*tmp*)
