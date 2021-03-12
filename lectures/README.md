@@ -109,6 +109,16 @@ https://bostonu.zoom.us/rec/share/L-_0R3NP9wjtj3xL5z2jPZAMNbdl8o7lY5yJtLWOaRxhxE
 
 ## Lecture-03-09(Tue)
 
+This lecture gives some simple examples of (full) program correctness.
+
 #### Recording:
 
 https://bostonu.zoom.us/rec/share/tdhR68VtpfyhA1DOtPsTnE871XACul2XPTL_PwkNhX2GK964ZkWoSXS1ZMZ51U4V.IrZmlXSiRImhg3u1 (Access Password: q9w32W$z)
+
+## Lecture-03-11(Tue)
+
+This lecture gives some examples involving a list type that carries the length information.
+
+#### Recording:
+
+https://bostonu.zoom.us/rec/share/9uiVkG-9MstnPzSScUN6PBsz0siNrHGbd4uayVowXg58tCl47KgAs_kk0UYeb2cb.bxI3kg0EvEAwe5lf (Access Password: +kfK*!4U)
