@@ -45,6 +45,7 @@ implement
 mylist_sing(x) =
 mylist_cons(x, mylist_nil())
 (* ****** ****** *)
+
 implement
 {a}(*tmp*)
 mytree_flatten
@@ -57,6 +58,47 @@ case+ t0 of
   (mytree_flatten(xs), mytree_flatten(ys))
 )
 
+(* ****** ****** *)
+extern
+fun
+{a:t@ype}
+print_mytree
+(mytree(a)): void
+overload print with print_mytree
+extern
+fun
+{a:t@ype}
+fprint_mytree
+(FILEref, mytree(a)): void
+overload fprint with fprint_mytree
+(* ****** ****** *)
+implement
+{a}
+print_mytree
+(t0) =
+fprint_mytree<a>(stdout_ref, t0)
+implement
+{a}
+fprint_mytree
+(out, t0) =
+(
+case+ t0 of
+|
+mytree_sing(x0) =>
+(
+fprint!(out, "(");
+fprint_val<a>(out, x0);
+fprint!(out, ")")
+)
+|
+mytree_pair(t1, t2) =>
+fprint!(out, "(", t1, ";", t2, ")")
+)
+
+(* ****** ****** *)
+implement
+(a)
+fprint_val<mytree(a)> = fprint_mytree<a>
 (* ****** ****** *)
 //
 // HX: 20 points
