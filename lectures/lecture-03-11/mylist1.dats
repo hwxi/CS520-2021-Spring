@@ -64,7 +64,7 @@ loop(xs, 0)
 fun
 loop
 {i:int}
-{j:int}
+{j:nat}
 ( xs
 : mylist1(a, i)
 , j: int(j)): int(i+j) =

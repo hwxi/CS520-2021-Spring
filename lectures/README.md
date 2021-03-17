@@ -115,10 +115,18 @@ This lecture gives some simple examples of (full) program correctness.
 
 https://bostonu.zoom.us/rec/share/tdhR68VtpfyhA1DOtPsTnE871XACul2XPTL_PwkNhX2GK964ZkWoSXS1ZMZ51U4V.IrZmlXSiRImhg3u1 (Access Password: q9w32W$z)
 
-## Lecture-03-11(Tue)
+## Lecture-03-11(Thu)
 
 This lecture gives some examples involving a list type that carries the length information.
 
 #### Recording:
 
 https://bostonu.zoom.us/rec/share/9uiVkG-9MstnPzSScUN6PBsz0siNrHGbd4uayVowXg58tCl47KgAs_kk0UYeb2cb.bxI3kg0EvEAwe5lf (Access Password: +kfK*!4U)
+
+## Lecture-03-16(Tue)
+
+This lecture uses assign02 as an example to show some practical benefits of dependent types.
+
+#### Recording:
+
+https://bostonu.zoom.us/rec/share/od59_7bs0yxoi_wso7OJERv9kj6eMQp93NEoeNbzBB2XoO97EpVLFKp3oVW2Aj-v.FipLsO2dLgirJejT (Access Password: 9tvy6^n1)
