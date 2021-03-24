@@ -17,6 +17,42 @@ For testing midterm1
 #staload "./../midterm1.dats"
 //
 (* ****** ****** *)
+implement
+mylist_submaxord
+(xs) =
+(
+case+ xs of
+|
+mylist_nil() =>
+mylist_nil()
+|
+mylist_cons(x1, xs) =>
+let
+//
+val
+xs1 = xs
+val
+ys1 =
+mylist_submaxord(xs1)
+//
+val
+xs2 =
+mylist_filter
+( xs
+, lam(x2) => (x1 <= x2))
+//
+val ys2 =
+mylist_cons
+(x1, mylist_submaxord(xs2))
+//
+in
+if
+mylist_length(ys1)
+>
+mylist_length(ys2) then ys1 else ys2
+end
+) (* end of [mylist_submaxord] *)
+(* ****** ****** *)
 #define
 :: mylist_cons
 #define

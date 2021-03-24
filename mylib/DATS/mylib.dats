@@ -306,6 +306,19 @@ mylist_rappend<a>(mylist_reverse<a>(xs), ys)
 
 (* ****** ****** *)
 
+implement
+{a}
+mylist_concat(xss) =
+(
+case+ xss of
+| mylist_nil() =>
+  mylist_nil()
+| mylist_cons(xs, xss) =>
+  mylist_append<a>(xs, mylist_concat<a>(xss))
+)
+
+(* ****** ****** *)
+
 (*
 implement
 {a}{b}
@@ -359,6 +372,41 @@ in
   mylist_foldleft<a><r>(xs, r0, lam(r0, x0) => f0(x0, r0))
 end // end of [mylist_foldright]
 //
+(* ****** ****** *)
+
+implement
+{a}{b}
+mylist_xprod2
+(xs, ys) =
+(
+xprod2(xs, ys)
+) where
+{
+fun
+xprod2
+( xs
+: mylist(a)
+, ys
+: mylist(b))
+: mylist(@(a, b)) =
+(
+case+ xs of
+|
+mylist_nil() =>
+mylist_nil()
+|
+mylist_cons(x1, xs) =>
+let
+val res = xprod2(xs, ys)
+in
+mylist_foldright
+( ys, res
+, lam(y2, res) =>
+  mylist_cons((x1, y2), res))
+end
+) (* end of [xprod2] *)
+} (* end of [mylist_xprod2] *)
+
 (* ****** ****** *)
 
 implement

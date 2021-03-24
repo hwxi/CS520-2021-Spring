@@ -69,6 +69,12 @@ fun
 {a:t@ype}
 mylist_append
 ( mylist(a), mylist(a) ): mylist(a)
+(* ****** ****** *)
+//
+fun
+{a:t@ype}
+mylist_concat
+(xss: mylist(mylist(a))): mylist(a)
 //
 (* ****** ****** *)
 //
@@ -148,6 +154,15 @@ mylist_foldright
 , f0: (a, r) -<cloref1> r): ( r )
 //
 (* ****** ****** *)
+
+fun
+{a:t@ype}
+{b:t@ype}
+mylist_xprod2
+( xs: mylist(a)
+, ys: mylist(b)): mylist(@(a, b))
+
+(* ****** ****** *)
 //
 fun
 {a:t@ype}
@@ -192,6 +207,7 @@ fun
 mystrm_append
 ( xs: mystrm(a)
 , ys: mystrm(a)): mystrm(a)
+//
 fun
 {a:t@ype}
 mystrm_concat

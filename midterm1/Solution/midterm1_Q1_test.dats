@@ -17,6 +17,51 @@ For testing midterm1
 #staload "./../midterm1.dats"
 //
 (* ****** ****** *)
+implement
+{a}
+mystrm_enumerate
+(xss) =
+(
+let
+fun
+helper
+(
+xss:
+mystrm
+(mystrm(a))): mystrm(a) =
+$delay
+(
+case !xss of
+|
+stream_nil() =>
+stream_nil()
+|
+stream_cons(xs1, xss) =>
+(
+case+ !xs1 of
+| stream_nil() => !(helper(xss))
+| stream_cons(x1, xs1) =>
+  stream_cons(x1, alter(xs1, helper(xss)))
+)
+)
+in
+  helper(xss)
+end
+) where
+{
+fun
+alter
+( xs: mystrm(a)
+, ys: mystrm(a)): mystrm(a) =
+$delay
+(
+case+ !xs of
+| stream_nil() => !ys
+| stream_cons(x1, xs) => 
+  stream_cons(x1, alter(ys, xs))
+)
+}
+(* ****** ****** *)
 
 val _Q1_ =
 {
