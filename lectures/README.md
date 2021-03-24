@@ -130,3 +130,12 @@ This lecture uses assign02 as an example to show some practical benefits of depe
 #### Recording:
 
 https://bostonu.zoom.us/rec/share/od59_7bs0yxoi_wso7OJERv9kj6eMQp93NEoeNbzBB2XoO97EpVLFKp3oVW2Aj-v.FipLsO2dLgirJejT (Access Password: 9tvy6^n1)
+
+## Lecture-03-23(Tue)
+
+This lecture goes over some questions in Midterm1. It stresses the importance of writing code
+one can actually explain. It is simply impractical to verify messy code with convoluted logic!
+
+#### Recording:
+
+https://bostonu.zoom.us/rec/share/sAiQ-4cgjdzDjC70GDk8sYfQEd170lzwGVyGw-uYLebNaUeoXUG2dMm512ur0Enf.ivKd7LD0xWUqQt3F (Access Password: Tb#0*XYQ)
