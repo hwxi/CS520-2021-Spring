@@ -17,6 +17,194 @@ For testing midterm1
 #staload "./../midterm1.dats"
 //
 (* ****** ****** *)
+//
+extern
+fun
+{a:t@ype}
+mylist_splits
+( xs
+: mylist(a))
+: mylist
+  (@(mylist(a), mylist(a)))
+//
+implement
+{a}
+mylist_splits
+  (xs) =
+(
+  splits(xs)
+) where
+{
+fun
+splits
+( xs
+: mylist(a))
+: mylist
+  (@(mylist(a), mylist(a))) =
+(
+case+ xs of
+|
+mylist_nil() =>
+mylist_nil()
+|
+mylist_cons
+(x1, xs) =>
+let
+val res = splits(xs)
+in
+mylist_cons
+(
+(mylist_sing(x1), xs)
+,
+mylist_map
+( res
+, lam(rr) => (mylist_cons(x1, rr.0), rr.1))
+)
+end // end of [splits]
+)
+} (* end of [mylist_splits] *)
+//
+(* ****** ****** *)
+(*
+//
+// This one is in mylib
+//
+extern
+fun
+{a:t@ype}
+{b:t@ype}
+mylist_xprod2
+( xs: mylist(a)
+, ys: mylist(b)): mylist(@(a, b))
+//
+*)
+(* ****** ****** *)
+//
+implement
+{a}
+list2mytrees
+  (xs) =
+(
+case+ xs of
+|
+mylist_nil() =>
+mylist_nil()
+|
+mylist_cons
+(x1, tl) =>
+(
+case+ tl of
+|
+mylist_nil() =>
+mylist_sing(mytree_sing(x1))
+|
+mylist_cons _ =>
+mylist_concat
+(
+mylist_map
+( mylist_splits(xs)
+, lam(xx) => helper(xx.0, xx.1))
+)
+)
+) where
+{
+fun
+helper
+( xs
+: mylist(a)
+, ys
+: mylist(a))
+: mylist(mytree(a)) =
+(
+case+ ys of
+|
+mylist_nil() =>
+mylist_nil()
+|
+mylist_cons _ =>
+let
+val
+res1 = list2mytrees<a>(xs)
+val
+res2 = list2mytrees<a>(ys)
+in
+mylist_map
+( mylist_xprod2(res1, res2)
+, lam(tt) => mytree_pair(tt.0, tt.1))
+end
+) (* end of [helper] *)
+} (*where*) // end of [list2mytrees]
+//
+(* ****** ****** *)
+(*
+//
+// This one is in mylib
+//
+extern
+fun
+{a:t@ype}
+{b:t@ype}
+mylist_xprod2
+( xs: mylist(a)
+, ys: mylist(b)): mylist(@(a, b))
+//
+*)
+(* ****** ****** *)
+
+implement
+{a}
+list2mytrees
+  (xs) =
+(
+case+ xs of
+|
+mylist_nil() =>
+mylist_nil()
+|
+mylist_cons
+(x1, tl) =>
+(
+case+ tl of
+|
+mylist_nil() =>
+mylist_sing(mytree_sing(x1))
+|
+mylist_cons _ =>
+mylist_concat
+(
+mylist_map
+( mylist_splits(xs)
+, lam(xx) => helper(xx.0, xx.1))
+)
+)
+) where
+{
+fun
+helper
+( xs
+: mylist(a)
+, ys
+: mylist(a))
+: mylist(mytree(a)) =
+(
+case+ ys of
+|
+mylist_nil() =>
+mylist_nil()
+|
+mylist_cons _ =>
+let
+val
+res1 = list2mytrees<a>(xs)
+val
+res2 = list2mytrees<a>(ys)
+in
+mylist_map
+( mylist_xprod2(res1, res2)
+, lam(tt) => mytree_pair(tt.0, tt.1))
+end
+) (* end of [helper] *)
+} (*where*) // end of [list2mytrees]
 (* ****** ****** *)
 extern
 fun
