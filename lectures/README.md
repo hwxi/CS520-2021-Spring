@@ -139,3 +139,14 @@ one can actually explain. It is simply impractical to verify messy code with con
 #### Recording:
 
 https://bostonu.zoom.us/rec/share/sAiQ-4cgjdzDjC70GDk8sYfQEd170lzwGVyGw-uYLebNaUeoXUG2dMm512ur0Enf.ivKd7LD0xWUqQt3F (Access Password: Tb#0*XYQ)
+
+## Lecture-03-25(Thu)
+
+This lecture covers more on programming with dependent types. In
+particular, mergesort is given an implementation that is verified to
+be length-preserving through type-checking. Also, a data structure is
+introduced for implementing so-called random-access lists.
+
+#### Recording:
+
+https://bostonu.zoom.us/rec/share/uAPrarZqq-rIk7fVbGzuFCmbOj5uVasj466vO0lW1FpWr7LMOzFzfGpa5MEqMdTz.8MsfyrsJWftyRWSd (Access Password: +3Tz6fZ^)
