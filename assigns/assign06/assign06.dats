@@ -343,6 +343,12 @@ ralist1_map
 
 (* ****** ****** *)
 //
+(*
+HX:
+Assuming
+a row-major representation
+*)
+//
 typedef
 fmatrix
 ( a:t@ype
