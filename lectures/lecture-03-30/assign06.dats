@@ -67,6 +67,11 @@ ralist1_odd(a, n+n+1) of
 (a, ralist1(a, n), ralist1(a, n))
 
 (* ****** ****** *)
+typedef
+ralist1
+(a:t@ype) = [n:nat] ralist1(a, n)
+(* ****** ****** *)
+
 extern
 prfun
 {a:t@ype}
@@ -88,7 +93,11 @@ ralist1_isnil
   (xs) =
 (
 case+ xs of
-| ralist1_nil() => true
+| ralist1_nil _ => true
+(*
+| ralist1_evn _ => true
+| ralist1_odd _ => true
+*)
 | _ (* else *) =>> false
 )
 
@@ -98,7 +107,6 @@ extern
 fun
 {a:t@ype}
 ralist1_sing
-{n:int}
 ( x0: a ): ralist1(a, 1)
 
 implement
@@ -134,6 +142,7 @@ case+ xs of
 |
 ralist1_nil() => ralist1_sing(x0)
 |
+// alternately
 ralist1_evn(xs1, xs2) => ralist1_odd(x0, xs1, xs2)
 |
 ralist1_odd(x1, xs1, xs2) =>
@@ -236,7 +245,7 @@ case+ xs of
 
 (* ****** ****** *)
 //
-extern
+extern // O(n(log(n)))
 fun
 {a:t@ype}
 ralist1_to_mylist1
@@ -297,12 +306,6 @@ mylist1_cons
 //
 } (* end of [ralist1_to_mylist1] *)
 //
-(* ****** ****** *)
-
-typedef
-ralist1
-(a:t@ype) = [n:nat] ralist1(a, n)
-
 (* ****** ****** *)
 //
 extern
@@ -389,7 +392,8 @@ ralist1_length
 (*
 Please give an implemenation
 of the following list-map function
-that is of O(n)-time complexity:
+that is of O(n)-time complexity
+(assuming that 'f0' is O(1)-time):
 *)
 //
 extern
