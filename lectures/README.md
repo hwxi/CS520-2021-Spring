@@ -150,3 +150,11 @@ introduced for implementing so-called random-access lists.
 #### Recording:
 
 https://bostonu.zoom.us/rec/share/uAPrarZqq-rIk7fVbGzuFCmbOj5uVasj466vO0lW1FpWr7LMOzFzfGpa5MEqMdTz.8MsfyrsJWftyRWSd (Access Password: +3Tz6fZ^)
+
+## Lecture-03-30(Tue)
+
+This lecture covers in-depth an implemenation of random-accesss lists.
+
+#### Recording:
+
+https://bostonu.zoom.us/rec/share/KEf7WB-S3CWDcY8ELwfo_kjUWrK97Y8RwHrTDk5jTtDanvX4Ev0Wh3dr56X3SBAa.0yteMc62Ms2p1f8J (Access Password: ?NDL6qWZ)

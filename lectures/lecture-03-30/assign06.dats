@@ -93,10 +93,10 @@ ralist1_isnil
   (xs) =
 (
 case+ xs of
-| ralist1_nil _ => true
+| ralist1_nil() => true
 (*
-| ralist1_evn _ => true
-| ralist1_odd _ => true
+| ralist1_evn _ => false
+| ralist1_odd _ => false
 *)
 | _ (* else *) =>> false
 )
@@ -142,9 +142,14 @@ case+ xs of
 |
 ralist1_nil() => ralist1_sing(x0)
 |
-// alternately
+(*
+alternately enumerating [xs1] and [xs2]:
+*)
 ralist1_evn(xs1, xs2) => ralist1_odd(x0, xs1, xs2)
 |
+(*
+alternately enumerating [xs1] and [xs2]:
+*)
 ralist1_odd(x1, xs1, xs2) =>
 ralist1_evn(ralist1_cons(x0, xs1), ralist1_cons(x1, xs2))
 )
@@ -241,11 +246,11 @@ case+ xs of
 )
 )
 )
-}
+} (* end of [ralist1_get_at] *)
 
 (* ****** ****** *)
 //
-extern // O(n(log(n)))
+extern // O(n*log(n))
 fun
 {a:t@ype}
 ralist1_to_mylist1
