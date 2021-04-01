@@ -192,6 +192,22 @@ case+ xs1 of
 extern
 fun
 {a:t@ype}
+ralist1_snoc
+{n:int}
+( x0: a
+, xs: ralist1(a, n)): ralist1(a, n+1)
+extern
+fun
+{a:t@ype}
+ralist1_unsnoc
+{n:pos}
+(xs: ralist1(a, n)): (a, ralist1(a, n-1))
+
+(* ****** ****** *)
+
+extern
+fun
+{a:t@ype}
 ralist1_get_at
 {n:int}
 {i:nat | i < n}
@@ -434,10 +450,18 @@ Please give an implementation of
 *)
 (* ****** ****** *)
 //
+(*
 extern
 fun
 fmatrix_mul
 {p,q,r:int}
+( A: fmatrix(double, p, q)
+, B: fmatrix(double, q, r)): fmatrix(double, p, r)
+*)
+extern
+fun
+fmatrix_mul
+{p,q,r:pos}
 ( A: fmatrix(double, p, q)
 , B: fmatrix(double, q, r)): fmatrix(double, p, r)
 //
