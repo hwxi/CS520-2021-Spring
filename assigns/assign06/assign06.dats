@@ -188,7 +188,9 @@ case+ xs1 of
 ) (* end of [ralist1_uncons] *)
 
 (* ****** ****** *)
-
+//
+// HX: 15 points
+//
 extern
 fun
 {a:t@ype}
@@ -196,13 +198,18 @@ ralist1_snoc
 {n:int}
 ( x0: a
 , xs: ralist1(a, n)): ralist1(a, n+1)
+//
+(* ****** ****** *)
+//
+// HX: 15 points
+//
 extern
 fun
 {a:t@ype}
 ralist1_unsnoc
 {n:pos}
 (xs: ralist1(a, n)): (a, ralist1(a, n-1))
-
+//
 (* ****** ****** *)
 
 extern
