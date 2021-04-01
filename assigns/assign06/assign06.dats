@@ -465,12 +465,14 @@ fmatrix_mul
 ( A: fmatrix(double, p, q)
 , B: fmatrix(double, q, r)): fmatrix(double, p, r)
 *)
+(*
 extern
 fun
 fmatrix_mul
 {p,q,r:pos}
 ( A: fmatrix(double, p, q)
 , B: fmatrix(double, q, r)): fmatrix(double, p, r)
+*)
 //
 (* ****** ****** *)
 
