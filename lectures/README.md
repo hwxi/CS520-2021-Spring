@@ -158,3 +158,17 @@ This lecture covers in-depth an implemenation of random-accesss lists.
 #### Recording:
 
 https://bostonu.zoom.us/rec/share/KEf7WB-S3CWDcY8ELwfo_kjUWrK97Y8RwHrTDk5jTtDanvX4Ev0Wh3dr56X3SBAa.0yteMc62Ms2p1f8J (Access Password: ?NDL6qWZ)
+
+## Lecture-04-01(Thu)
+
+This lecture gives a quick introduction to the concept of continuation.
+
+https://bostonu.zoom.us/rec/share/WfzIxalAUd2nuHPof9bsRt1FbDFBSL7sSfDstYFnpjS32ZJxSYrmkzscQD0jxgXE.WsPX3RtcvHYzmnps (Access Password: $HnD$Tq7)
+
+## Lecture-04-06(Tue)
+
+This lecture continues with more examples of CPS-style of
+programming. Also, a list-based quicksort implementation is given for
+the subsequent animation task.
+
+https://bostonu.zoom.us/rec/share/QZSOj3e0HXKw5v4yRhfW4IUzr8hCVyXv6xr9N-FACDihX8GcfQt7S99hgxWCG0Mq.dBJfKhxXrVOgZuGX (Access Password: mSKl5&C6)
