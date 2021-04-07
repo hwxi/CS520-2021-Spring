@@ -20,7 +20,7 @@ if x > 0 then x*fact(x-1) else 1
 fun
 kfact
 ( x: int
-, k0: (int) -<cloref1> void): void =
+, k0: (int) -<cloref1> int): int =
 if
 x = 0
 then k0(1) // tail-call
@@ -28,20 +28,20 @@ else kfact(x-1, lam(res) => k0(x * res))
 //
 (* ****** ****** *)
 
-val N = 10
+val N = 3
 
 (* ****** ****** *)
-
 (*
 val () =
-println!("fact(", N, ") = ", fact(N))
-val () =
-kfact
-( N
-, lam(res) =>
-  println!("kfact(", N, ") = ", res))
+println!
+("fact(", N, ") = ", fact(N))
 *)
-
+//
+val res =
+kfact(N, lam(res) => res)
+val () =
+println!("kfact(", N, ") = ", res)
+//
 (* ****** ****** *)
 
 fun
@@ -60,7 +60,9 @@ kfibo
 
 (*
 val () =
-kfibo(N, lam(res) => println!("res*res = ", res*res))
+kfibo
+( N
+, lam(res) => println!("res*res = ", res*res))
 *)
 
 (* ****** ****** *)
@@ -73,8 +75,10 @@ if x > 0 then fact2(x-1, x*acc) else acc
 
 (* ****** ****** *)
 
+(*
 val () =
 println!("fact(", N, ") = ", fact(N))
+*)
 
 (* ****** ****** *)
 val N2 = 1000000
@@ -85,10 +89,11 @@ if x = 0 then true else isodd(x-1)
 and
 isodd(x: int): bool =
 if x = 0 then false else isevn(x-1)
-
+(*
 val () = println!("isevn(", N2, ") = ", isevn(N2))
+*)
 (* ****** ****** *)
-
+(*
 fun
 kfact
 ( x: int
@@ -101,11 +106,13 @@ kfact2
 (
   if x > 0 then kfact2(x-1, x*acc, k0) else k0(acc) 
 )
-
+*)
 (* ****** ****** *)
+(*
 val () =
 kfact
 (N, lam(res) => println!("kfact(", N, ") = ", res))
+*)
 (* ****** ****** *)
 
 (* end of [continuation.dats] *)
