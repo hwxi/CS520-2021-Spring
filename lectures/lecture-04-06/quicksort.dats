@@ -91,7 +91,7 @@ implement
 {a}
 mylist1_quicksort(xs, cmp) =
 let
-
+//
 fun
 qsort
 {n:int}
@@ -140,6 +140,7 @@ else
 partition(x0, xs, ys, mylist1_cons(x1, zs))
 end
 )
+//
 in
   qsort(xs)
 end // end of [mylist1_quicksort]
