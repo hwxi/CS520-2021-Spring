@@ -45,7 +45,35 @@ fun
 {a:t@ype}
 mylist1_append
 {m,n:int}
-(mylist1(a, m), mylist1(a, n)): mylist1(a, m+n)
+( mylist1(a, m)
+, mylist1(a, n)): mylist1(a, m+n)
+implement
+{a}
+mylist1_append
+  (xs, ys) =
+(
+  append(xs, ys)
+) where
+{
+//
+prval () = lemma_mylist1(xs)
+prval () = lemma_mylist1(ys)
+//
+fun
+append
+{m,n:nat}
+( xs
+: mylist1(a, m)
+, ys
+: mylist1(a, n)): mylist1(a, m+n) =
+(
+case+ xs of
+| mylist1_nil() => ys
+| mylist1_cons(x1, xs) =>
+  mylist1_cons(x1, append(xs, ys))
+)
+//
+} (*where*) // end of [mylist1_append]
 
 (* ****** ****** *)
 
@@ -117,7 +145,20 @@ in
 end // end of [mylist1_quicksort]
 
 (* ****** ****** *)
-////
+//
+extern
+fun
+{a:t@ype}
+print_mylist1(mylist1(a)): void
+overload print with print_mylist1
+//
+implement
+{a}
+print_mylist1(xs) =
+print($UNSAFE.cast{mylist(a)}(xs))
+//
+(* ****** ****** *)
+
 val xs = mylist1_nil{int}()
 val xs = mylist1_cons(1, xs)
 val xs = mylist1_cons(2, xs)

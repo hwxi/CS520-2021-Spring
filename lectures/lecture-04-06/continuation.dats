@@ -104,8 +104,7 @@ case- !sts of
 val () =
 try
 kevals
-(kfact4(10, lam(res) => ()))
-with ~QuitExn() => ()
+(kfact4(10, lam(res) => ())) with ~QuitExn() => ()
 
 (* ****** ****** *)
 
