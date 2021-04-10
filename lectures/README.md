@@ -172,3 +172,10 @@ programming. Also, a list-based quicksort implementation is given for
 the subsequent animation task.
 
 https://bostonu.zoom.us/rec/share/QZSOj3e0HXKw5v4yRhfW4IUzr8hCVyXv6xr9N-FACDihX8GcfQt7S99hgxWCG0Mq.dBJfKhxXrVOgZuGX (Access Password: mSKl5&C6)
+
+## Lecture-04-08(Thu)
+
+This lecture first demonstrates how ATS source can be compiled to JS code.
+It then continues with programming with linear streams:
+
+https://bostonu.zoom.us/rec/share/BhNbpXGvoJUR8RtI_dJnBha-zgu594peMe47TW_labCELbbQl1ado-79_uBRwOI.LPf_jIBCCLzral2U ( Access Password: 7.f5Y80+ )
