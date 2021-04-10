@@ -1,0 +1,43 @@
+############
+
+Q1: 10 points:
+
+An example of enumerating factorials is given in the following
+files:
+
+fact.html
+fact.dats
+
+There is also a given Makefile.
+
+To try out this example, please execute the following command-lines:
+
+'make fact_dats.js'
+'chromium-browser fact.html'
+
+Please read the given code and then construct a similar example that
+enumerates the sequence of prime numbers.
+
+############
+
+Q2: 10 points:
+
+Please think of a design that adds a button (prev) for showing the
+previous prime number. Describe your design first and then implement it.
+
+############
+//
+// HX: 5 points
+// 
+extern
+fun{}
+stream_ln2(): stream_vt(double)
+//
+// HX: 10 points
+// 
+extern
+fun{}
+EulerTrans
+(xs: stream_vt(double)): stream_vt(double)
+//
+############ end of [Assign07.dats] ############
