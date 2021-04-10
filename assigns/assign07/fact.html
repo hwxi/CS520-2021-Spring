@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CS520-Fact</title>
+    <style>
+      #fact_output
+      {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      }
+      #canvas-container
+      {
+      margin: 0 auto; width: 920px; height: auto;
+      }
+    </style>
+
+    <script
+       src="https://cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js">
+    </script>
+    <script
+       src="https://ats-lang.github.io/LIBRARY/libatscc2js/ATS2-0.3.2/libatscc2js_all.js">
+    </script>
+    <script type="text/javascript"
+       src="https://ats-lang.github.io/LIBRARY/libatscc2js/ATS2-0.3.2/libatscc2js_print_store_cats.js">
+    </script>
+    <script type="text/javascript">
+      function
+      fact_onclick() {
+        ats2jspre_the_print_store_clear();
+        FACT__fact_print_next(/* void */);
+        document.getElementById("fact_output").innerHTML = ats2jspre_the_print_store_join();
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+    <h1>Factorials</h1>
+
+    <hr></hr>
+
+    <h2>Controls</h2>
+    <ul>
+      <li>
+	<button type="button" onclick="fact_onclick()">Next</button>: for generating the next factorial
+      </li>
+    </ul>
+
+    <h2>Display for Factorials</h2>
+    <pre id="fact_output">
+      [This is the stage for displaying the output]
+    </pre>
+
+    <script type="text/javascript" src="fact_dats.js"></script>
+
+  </body>
+
+</html>
