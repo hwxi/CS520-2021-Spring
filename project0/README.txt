@@ -22,7 +22,7 @@ quicksort
 (A: myarray(a)): void
 fun
 {a:t@ype}
-quicksort1
+quicksort1 // dependently-typed
 {n:int}(A: myarray1(a, n)): void
 *)
 
@@ -40,7 +40,7 @@ fun
 swap1
 {n:int}
 { i,j:nat
-| i < j; j < n}
+| i < j; j < n} // dependently typed
 (A: myarray1(a, n), i: int(i), j: int(j)): void
 *)
 
@@ -175,7 +175,13 @@ be stepized by the following function:
 
 fun
 quicksort_stepize
-(A: arrszref(int)): stream_vt(STEP(int))
+(A: myarray(int)): stream_vt(STEP(int))
+(*
+fun
+quicksort1_stepize
+{n:int}
+(A: myarray1(int, n)): stream_vt(STEP(int))
+*)
 
 Strictly speaking, the type for steps here should be
 STEP(void). However, C has a very peculiar way for handling

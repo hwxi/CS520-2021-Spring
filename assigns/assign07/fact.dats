@@ -2,16 +2,16 @@
 #define
 ATS_MAINATSFLAG 1
 #define
-ATS_DYNLOADNAME "FACT__dynload"
+ATS_DYNLOADNAME "MYFACT__dynload"
 (* ****** ****** *)
 %{$
-const _ = FACT__dynload();
+const _ = MYFACT__dynload();
 %} // for initialization
 (* ****** ****** *)
 #define
-ATS_EXTERN_PREFIX "FACT__"
+ATS_EXTERN_PREFIX "MYFACT__"
 #define
-ATS_STATIC_PREFIX "FACT__"
+ATS_STATIC_PREFIX "MYFACT__"
 #define
 LIBATSCC2JS_targetloc
 "$PATSHOME/contrib\
@@ -26,6 +26,13 @@ UN = "prelude/SATS/unsafe.sats"
 #staload
 "{$LIBATSCC2JS}/SATS/print.sats" // for printing
 (* ****** ****** *)
+(*
+#staload
+"./../../mylib/SATS/mylib.sats"
+#staload _ =
+"./../../mylib/DATS/mylib.dats"
+*)
+(* ****** ****** *)
 //
 typedef int2 = $tup(int, int)
 //
@@ -37,7 +44,7 @@ fact_print_next(): void = "ext#%"
 //
 extern
 fun
-fact_stream(): stream(int2) = "ext#%"
+fact_stream(): stream(int2)//="ext#%"//not used
 //
 implement
 fact_stream() =
