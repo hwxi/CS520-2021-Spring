@@ -179,3 +179,10 @@ This lecture first demonstrates how ATS source can be compiled to JS code.
 It then continues with programming with linear streams:
 
 https://bostonu.zoom.us/rec/share/BhNbpXGvoJUR8RtI_dJnBha-zgu594peMe47TW_labCELbbQl1ado-79_uBRwOI.LPf_jIBCCLzral2U ( Access Password: 7.f5Y80+ )
+
+## Lecture-04-13(Tue)
+
+This lecture first goes over the animation project and then talks about arrays
+needed for implementing the quicksort algorithm on arrays.
+
+https://bostonu.zoom.us/rec/share/TtFWQti0wzD27nxxyyWmR9vujObnYGx6tOHEFUvLV63oOvf1aUKWvR1vMhUxr0aA.er4Ja98dzU_7GFeU (Access Password: 5i2p%W!R)
