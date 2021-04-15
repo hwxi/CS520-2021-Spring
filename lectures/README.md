@@ -186,3 +186,10 @@ This lecture first goes over the animation project and then talks about arrays
 needed for implementing the quicksort algorithm on arrays.
 
 https://bostonu.zoom.us/rec/share/TtFWQti0wzD27nxxyyWmR9vujObnYGx6tOHEFUvLV63oOvf1aUKWvR1vMhUxr0aA.er4Ja98dzU_7GFeU (Access Password: 5i2p%W!R)
+
+## Lecture-04-15(Thu)
+
+This lecture introduce Braun trees for implementing functional arrays
+and also briefly compares ralist in Assign06 with Braun trees.
+
+https://bostonu.zoom.us/rec/share/yrYbRujmeHs2jg3IHU8KvnVi2oiGDIpPqSy8Cgxyib5b5CLqzaOmt8YFCaG4Wujt.zjppFrYMmqjHC1DZ (Access Password: S%mDa48Y)
