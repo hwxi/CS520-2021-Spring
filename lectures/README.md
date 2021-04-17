@@ -192,4 +192,6 @@ https://bostonu.zoom.us/rec/share/TtFWQti0wzD27nxxyyWmR9vujObnYGx6tOHEFUvLV63oOv
 This lecture introduce Braun trees for implementing functional arrays
 and also briefly compares ralist in Assign06 with Braun trees.
 
-https://bostonu.zoom.us/rec/share/yrYbRujmeHs2jg3IHU8KvnVi2oiGDIpPqSy8Cgxyib5b5CLqzaOmt8YFCaG4Wujt.zjppFrYMmqjHC1DZ (Access Password: S%mDa48Y)
+PS: Unfortunately, I forgot the record this lecture. Please study the
+code in brauntree.dats. You may expect to see something similar to occur
+on the Midterm2.
