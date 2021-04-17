@@ -1,3 +1,7 @@
+(* ****** ****** *)
+#include
+"share/atspre_staload.hats"
+(* ****** ****** *)
 
 datatype
 braunt(a:t@ype, int) =
@@ -11,11 +15,15 @@ braunt_node
 (a, nl+nr+1) of
 (a, braunt(a, nl), braunt(a, nr))
 
+(* ****** ****** *)
+
 extern
 prfun
 lemma_braunt
 {a:t@ype}{n:int}
 (t0: braunt(a, n)): [n >= 0] void
+
+(* ****** ****** *)
 
 extern
 fun
@@ -32,6 +40,8 @@ case+ t0 of
 | braunt_node(_, tl, tr) =>
   1+braunt_size(tl)+braunt_size(tr)
 )
+
+(* ****** ****** *)
 
 extern
 fun
@@ -60,6 +70,8 @@ case+ t0 of
   braunt_node(x1, braunt_snoc<a>(tr, x0), tl)
 )
 
+(* ****** ****** *)
+
 extern
 fun
 {a:t@ype}
@@ -71,7 +83,9 @@ braunt_uncons(t0) =
 (
 case+ t0 of
 (*
-| braunt_nil() =>
+|
+// HX: deadcode
+braunt_nil() => ....
 *)
 |
 braunt_node(x0, tl, tr) =>
@@ -91,3 +105,7 @@ in
 end
 )
 ) (* end of [braunt_uncons] *)
+
+(* ****** ****** *)
+
+(* end of [brauntree.dats] *)
