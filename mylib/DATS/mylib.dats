@@ -660,4 +660,59 @@ then stream_vt_cons(x0, auxstrm(xs)) else !(auxstrm(xs))
 
 (* ****** ****** *)
 
+local
+
+assume
+myarray(a:t@ype) = arrszref(a)
+
+in(* in-of-local *)
+
+(* ****** ****** *)
+
+implement
+{a}
+myarray_make_elt
+(i0, x0) =
+let
+val i0 = g1ofg0(i0)
+val () =
+assertloc( i0 >= 0 )
+in
+arrszref_make_elt(i2sz(i0), x0)
+end // end of [myarray_make_elt]
+
+(* ****** ****** *)
+
+implement
+{a}
+myarray_get_at
+(A0, i0) =
+let
+val i0 = g1ofg0(i0)
+val () =
+assertloc( i0 >= 0 )
+in
+arrszref_get_at(A0, i2sz(i0))
+end // end of [myarray_get_at]
+
+(* ****** ****** *)
+
+implement
+{a}
+myarray_set_at
+(A0, i0, x0) =
+let
+val i0 = g1ofg0(i0)
+val () =
+assertloc( i0 >= 0 )
+in
+arrszref_set_at(A0, i2sz(i0), x0)
+end // end of [myarray_set_at]
+
+(* ****** ****** *)
+
+end // end of [local]
+
+(* ****** ****** *)
+
 (* end of [mylib.dats] *)

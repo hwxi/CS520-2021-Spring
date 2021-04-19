@@ -237,4 +237,27 @@ mylstrm_filter
 //
 (* ****** ****** *)
 
+abstype
+myarray(a:t@ype) = ptr
+
+(* ****** ****** *)
+//
+fun
+{a:t@ype}
+myarray_make_elt
+(i0: int, x0: a): myarray(a)
+//
+(* ****** ****** *)
+//
+fun
+{a:t@ype}
+myarray_get_at
+(A0: myarray(a), i0: int): a
+fun
+{a:t@ype}
+myarray_set_at
+(A0: myarray(a), i0: int, x0: a): void
+//
+(* ****** ****** *)
+
 (* end of [mylib.sats] *)
