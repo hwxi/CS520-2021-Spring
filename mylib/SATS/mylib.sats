@@ -236,18 +236,19 @@ mylstrm_filter
 , f0: (a) -<cloref1> bool): mylstrm(a)
 //
 (* ****** ****** *)
-
+//
 abstype
 myarray(a:t@ype) = ptr
-
-(* ****** ****** *)
+//
+fun
+{a:t@ype}
+myarray_length
+(A0: myarray(a)): int
 //
 fun
 {a:t@ype}
 myarray_make_elt
 (i0: int, x0: a): myarray(a)
-//
-(* ****** ****** *)
 //
 fun
 {a:t@ype}
@@ -257,6 +258,30 @@ fun
 {a:t@ype}
 myarray_set_at
 (A0: myarray(a), i0: int, x0: a): void
+//
+(* ****** ****** *)
+//
+abstype
+myarray1(a:t@ype, n:int) = ptr
+//
+fun
+{a:t@ype}
+myarray1_make_elt
+{n:nat}
+(i0: int(n), x0: a): myarray1(a, n)
+//
+fun
+{a:t@ype}
+myarray1_get_at
+{n:int}
+{i:nat|i < n}
+(A0: myarray1(a, n), i0: int(i)): a
+fun
+{a:t@ype}
+myarray1_set_at
+{n:int}
+{i:nat|i < n}
+(A0: myarray1(a, n), i0: int(i), x0: a): void
 //
 (* ****** ****** *)
 

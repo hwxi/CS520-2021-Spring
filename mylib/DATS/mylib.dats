@@ -668,6 +668,20 @@ myarray(a:t@ype) = arrszref(a)
 in(* in-of-local *)
 
 (* ****** ****** *)
+//
+implement
+{a}
+myarray_length
+( A0 ) =
+(
+sz2i(asz)) where
+{
+var asz: size_t
+val _A_ =
+arrszref_get_refsize{a}(A0, asz)
+}
+//
+(* ****** ****** *)
 
 implement
 {a}
@@ -708,6 +722,41 @@ assertloc( i0 >= 0 )
 in
 arrszref_set_at(A0, i2sz(i0), x0)
 end // end of [myarray_set_at]
+
+(* ****** ****** *)
+
+end // end of [local]
+
+(* ****** ****** *)
+
+local
+
+assume
+myarray1
+(a:t@ype, n:int) = arrayref(a, n)
+
+in(* in-of-local *)
+
+(* ****** ****** *)
+//
+implement
+{a}
+myarray1_make_elt
+(i0, x0) =
+arrayref_make_elt(i2sz(i0), x0)
+//
+(* ****** ****** *)
+
+implement
+{a}
+myarray1_get_at
+(A0, i0) =
+arrayref_get_at( A0, i2sz(i0) )
+implement
+{a}
+myarray1_set_at
+(A0, i0, x0) =
+arrayref_set_at(A0, i2sz(i0), x0)
 
 (* ****** ****** *)
 
