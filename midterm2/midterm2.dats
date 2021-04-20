@@ -364,6 +364,7 @@ fun
 braunt_snoc
 {n:int}
 (t0: braunt(a, n), x0: a): braunt(a, n+1)
+(*
 implement
 {a}
 braunt_snoc
@@ -376,6 +377,47 @@ braunt_nil() => braunt_sing(x0)
 braunt_node(x1, tl, tr) =>
 braunt_node(x1, braunt_snoc<a>(tr, x0), tl)
 )
+*)
+//
+implement
+{a}
+braunt_snoc
+  (t0, x0) =
+(
+  snoc(t0, n0)) where
+{
+//
+val n0 =
+braunt_length(t0)
+//
+fun
+snoc
+{n:nat} .<n>.
+( t0
+: braunt(a, n), n: int n
+) : braunt(a, n+1) =
+(
+//
+if
+n > 0
+then let
+  val n2 = half(n)
+  val+
+  braunt_node(x, tl, tr) = t0
+in
+  if n > n2 + n2
+  then
+  braunt_node(x, snoc(tl, n2), tr)
+  else
+  braunt_node(x, tl, snoc(tr, n2-1))
+  // end of [if]
+end // end of [then]
+else braunt_sing<a>(x0)
+)
+//
+prval () = lemma_braunt(t0)
+//
+} (*where*) // end of [braunt_snoc]
 //
 (* ****** ****** *)
 //
