@@ -383,6 +383,8 @@ braunt_node(x1, braunt_snoc<a>(tr, x0), tl)
 // Please give an implementation
 // of O(m+n)-time that concatenates
 // two given Braun trees.
+// Note that you need to state clearly
+// why your implementation is O(m+n).
 //
 extern
 fun
@@ -398,6 +400,9 @@ braunt_append
 // Please give an implementation
 // of O(n)-time that reverses a given
 // Braun tree.
+// Note that you need to state in clear
+// terms as to why your implementation
+// is O(n).
 //
 extern
 fun
@@ -422,6 +427,7 @@ braunt_reverse
 (* ****** ****** *)
 //
 // HX: 20 points
+// NO time-complexity is specified
 //
 extern
 fun
@@ -453,6 +459,7 @@ CHOOSE(int, int, int) =
 (* ****** ****** *)
 //
 // HX: 30 points
+// NO time-complexity is specified
 //
 extern
 fun
