@@ -4,10 +4,10 @@
 (* ****** ****** *)
 //
 extern
-fun
+fun{}
 f91(x: int): int
 implement
-f91(x) =
+f91<>(x) =
 if x > 100
 then x - 10 else f91(f91(x+11))
 //
