@@ -3,6 +3,16 @@
 (* ****** ****** *)
 #staload "./../midterm2.dats"
 (* ****** ****** *)
+#staload
+"./../../mylib/SATS/mylib.sats"
+#staload
+"./../../mylib/DATS/mylib.dats"
+(* ****** ****** *)
+#include "share/atspre_staload.hats"
+(* ****** ****** *)
+implement(a)
+fprint_val<mylist(a)> = fprint_mylist
+(* ****** ****** *)
 (*
 //
 // HX: 20 points

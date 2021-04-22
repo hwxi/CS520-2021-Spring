@@ -60,6 +60,13 @@ fprint_mylist
 //
 fun
 {a:t@ype}
+mylist_sing
+( x0: a ): mylist(a)
+//
+(* ****** ****** *)
+//
+fun
+{a:t@ype}
 mylist_length
 ( xs: mylist(a) ): int
 //

@@ -91,6 +91,14 @@ case+ xs of
 } (* end of [fprint_mylist] *)
 
 (* ****** ****** *)
+//
+implement
+{a}(*tmp*)
+mylist_sing(x0) =
+mylist_cons
+(x0, mylist_nil())
+//
+(* ****** ****** *)
 
 implement
 {a}(*tmp*)
