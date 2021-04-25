@@ -488,6 +488,13 @@ mylist1_nil(a, 0) of ()
 mylist1_cons(a, n+1) of (a, mylist1(a, n))
 //
 (* ****** ****** *)
+
+extern
+prfun
+lemma_mylist1
+{a:t@ype}{n:int}(mylist1(a, n)): [n>=0] void
+
+(* ****** ****** *)
 //
 dataprop
 CHOOSE(int, int, int) =
