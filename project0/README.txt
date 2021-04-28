@@ -2,6 +2,7 @@
 ######
 #
 # Animating Quicksort
+# (100 homework points)
 #
 ######
 *)

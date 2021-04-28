@@ -41,6 +41,9 @@ implement fmatrix1_make(xss) = xss
 //
 // Please implement [fmatrix1_get_at] here
 //
+implement
+fmatrix1_get_at(M, i, j) = M[i,j]
+//
 end // end of [local]
 
 (* ****** ****** *)
