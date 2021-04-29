@@ -27,6 +27,18 @@ quicksort1 // dependently-typed
 {n:int}(A: myarray1(a, n)): void
 *)
 
+(*
+fun
+{a:t@ype}
+quicksort
+(A: myarray(a), cmp: (a, a) -<cloref1> int): void
+fun
+{a:t@ype}
+quicksort1 // dependently-typed
+{n:int}
+(A: myarray1(a, n), cmp: (a, a) -<cloref1> int): void
+*)
+
 This implementation makes use of a few other functions.
 In particular, it calls the following function 'swap' to
 swap two elements in a given array:
