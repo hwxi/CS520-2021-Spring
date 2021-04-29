@@ -266,6 +266,9 @@ fun
 myarray_set_at
 (A0: myarray(a), i0: int, x0: a): void
 //
+overload [] with myarray_get_at
+overload [] with myarray_set_at
+//
 (* ****** ****** *)
 //
 abstype
@@ -289,6 +292,9 @@ myarray1_set_at
 {n:int}
 {i:nat|i < n}
 (A0: myarray1(a, n), i0: int(i), x0: a): void
+//
+overload [] with myarray1_get_at
+overload [] with myarray1_set_at
 //
 (* ****** ****** *)
 
