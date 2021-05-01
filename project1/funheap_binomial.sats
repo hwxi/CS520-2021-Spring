@@ -20,29 +20,37 @@ stadef heap = heap_t0ype_type
 
 (* ****** ****** *)
 //
-typedef cmp (a:t@ype) = (a, a) -<cloref> Sgn
+typedef
+cmp
+(a:t@ype) =
+(a, a) -<cloref> Sgn
 //
 fun{a:t@ype}
-compare_elt_elt (x1: a, x2: a, cmp: cmp a): Sgn
+compare_elt_elt
+(x1: a, x2: a, cmp: cmp a): Sgn
 //
 (* ****** ****** *)
 
-fun{} funheap_make_nil {a:t@ype} (): heap (a)
-
-(* ****** ****** *)
-
-fun{a:t@ype} funheap_size (hp: heap a): size_t
-
-(* ****** ****** *)
-
-fun{a:t@ype}
-funheap_insert (t: &heap (a), x: a, cmp: cmp a): void
+fun{}
+funheap_make_nil
+{a:t@ype} ((*void*)): heap(a)
 
 (* ****** ****** *)
 
 fun{a:t@ype}
-funheap_delmin (
-  t: &heap (a), res: &a? >> opt (a, b), cmp: cmp a
+funheap_size (hp: heap a): size_t
+
+(* ****** ****** *)
+
+fun{a:t@ype}
+funheap_insert
+(t: &heap(a) >> _, x: a, cmp: cmp a): void
+
+(* ****** ****** *)
+
+fun{a:t@ype}
+funheap_delmin
+( t: &heap(a) >> _, res: &a? >> opt (a, b), cmp: cmp a
 ) : #[b:bool] bool b // end of [funheap_delim]
 
 (* ****** ****** *)
