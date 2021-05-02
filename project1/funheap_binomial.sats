@@ -13,11 +13,13 @@
 #define ATS_STALOADFLAG 0 // no static loading at run-time
 
 (* ****** ****** *)
-
+//
 abstype
-heap_t0ype_type(a:t@ype+)
+heap_t0ype_type
+( a:t@ype+ ) = ptr
+//
 stadef heap = heap_t0ype_type
-
+//
 (* ****** ****** *)
 //
 typedef

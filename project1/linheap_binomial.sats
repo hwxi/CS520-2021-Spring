@@ -13,9 +13,13 @@
 #define ATS_STALOADFLAG 0 // no static loading at run-time
 
 (* ****** ****** *)
-
+//
 absviewtype
-heap_viewt0ype_viewtype(a:viewt@ype+)
+heap_viewt0ype_viewtype
+ ( a:viewt@ype+ ) = ptr
+//
+(* ****** ****** *)
+
 stadef heap = heap_viewt0ype_viewtype
 
 (* ****** ****** *)
